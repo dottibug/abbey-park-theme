@@ -6,7 +6,7 @@
         {%- assign user_bar_color = sections.announcement-bar.blocks.announcement.settings.bar_color -%}
         {%- style -%} 
         .announcement-bar .color-bar {
-          background-color: {{ block.settings.bar_color }}
+          background: {{ block.settings.bar_color }}
         }
         {%- endstyle -%}
 
@@ -48,34 +48,6 @@
           "id": "bar_color",
           "label": "Bar Color",
           "default": "#000000"
-        },
-        {
-          "type": "select",
-          "id": "color_scheme",
-          "options": [
-            {
-              "value": "background-1",
-              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__1.label"
-            },
-            {
-              "value": "background-2",
-              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__2.label"
-            },
-            {
-              "value": "inverse",
-              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__3.label"
-            },
-            {
-              "value": "accent-1",
-              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__4.label"
-            },
-            {
-              "value": "accent-2",
-              "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.options__5.label"
-            }
-          ],
-          "default": "accent-1",
-          "label": "t:sections.announcement-bar.blocks.announcement.settings.color_scheme.label"
         },
         {
           "type": "url",
