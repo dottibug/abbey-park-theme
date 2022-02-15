@@ -1,11 +1,12 @@
 {%- for block in section.blocks -%}
   {%- case block.type -%}
     {%- when 'announcement' -%}
-    {%- style -%} 
+      <div class="announcement-bar color-bar" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+        {%- style -%} 
         .announcement-bar.color-bar {
           background-color: {{ block.settings.bar_color }}
         }
-      <div class="announcement-bar color-bar" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+        {%- endstyle -%}
         {%- if block.settings.text != blank -%}
           {%- if block.settings.link != blank -%}
             <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
@@ -21,7 +22,6 @@
           {%- endif -%}
         {%- endif -%}
       </div>
-    {%- endstyle -%}
   {%- endcase -%}
 {%- endfor -%}
 
