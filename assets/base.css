@@ -2225,6 +2225,11 @@ input[type='checkbox'] {
   justify-self: center;
 }
 
+#shopify-section-header > sticky-header > header > a > span {
+  text-transform: uppercase;
+  font-family: minerva-modern, sans-serif;
+}
+
 #shopify-section-header > sticky-header > header > h1 > a > span {
   text-transform: uppercase;
   font-family: minerva-modern, sans-serif;
