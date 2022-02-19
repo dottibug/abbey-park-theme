@@ -1,5 +1,7 @@
 {
   "current": {
+    "type_header_font": "lato_n4",
+    "type_body_font": "lato_n4",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -8,6 +10,7 @@
             "type": "announcement",
             "settings": {
               "text": "Free Shipping on Orders Over $120",
+              "color_scheme": "accent-1",
               "bar-color": "#333",
               "link": ""
             }
