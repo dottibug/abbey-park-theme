@@ -2140,6 +2140,8 @@ input[type='checkbox'] {
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  display: grid;
+  justify-items: center;
 }
 
 .header-wrapper--border-bottom {
@@ -2187,8 +2189,9 @@ input[type='checkbox'] {
 
   .header--middle-center {
     grid-template-areas: 'navigation heading icons';
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     column-gap: 2rem;
+    width: -webkit-fill-available;
   }
 
   .header:not(.header--middle-left) .header__inline-menu {
@@ -2207,6 +2210,13 @@ input[type='checkbox'] {
 
 .header > .header__heading-link {
   line-height: 0;
+}
+
+.header.header--middle-center.page-width.header--has-menu {
+  padding: 20px;
+  margin: 0 20px;
+  align-items: center;
+  align-content: center;
 }
 
 .header__heading,
@@ -2250,7 +2260,7 @@ input[type='checkbox'] {
 
   .header__heading,
   .header__heading-link {
-    justify-self: start;
+    justify-self: center;
   }
 
   .header--top-center .header__heading-link,
@@ -2473,9 +2483,10 @@ details[open] > .header__icon--menu .icon-hamburger {
 
 /* Header menu */
 .header__inline-menu {
-  margin-left: -1.2rem;
+  /* margin-left: -1.2rem; */
   grid-area: navigation;
   display: none;
+  justify-self: left;
 }
 
 .header--top-center .header__inline-menu,
