@@ -2227,7 +2227,7 @@ input[type='checkbox'] {
 
 #shopify-section-header > sticky-header > header > h1 > a > span {
   text-transform: uppercase;
-  font-family: minerva-modern, sans-serif;
+  font-family: minerva-modern, sans-serif !important;
 }
 
 .header__heading-link {
