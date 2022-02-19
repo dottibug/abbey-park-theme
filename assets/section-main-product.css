@@ -313,10 +313,17 @@ a.product__text {
 .product__title {
   word-break: break-word;
   margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-family: minerva-modern, sans-serif;
+  color: #333;
 }
 
+/* Product subtitle metafield */
 .product__title + .product__text.caption-with-letter-spacing {
-  margin-top: -1.5rem;
+  margin-top: -0.5rem;
+  font-size: 1.35rem;
+  color: #999;
+
 }
 
 .product__text.caption-with-letter-spacing + .product__title {
@@ -1155,9 +1162,4 @@ a.product__text {
   content: "";
   display: block;
   padding-bottom: 100%;
-}
-
-#shopify-section-header > sticky-header > header > a > span {
-  font-family: 'minerva-modern';
-  text-transform: uppercase;
 }
