@@ -857,14 +857,14 @@
           "options__1": {
             "label": "Middle left"
           },
+          "options__4": {
+            "label": "Middle center"
+          },
           "options__2": {
             "label": "Top left"
           },
           "options__3": {
             "label": "Top center"
-          },
-          "options__4": {
-            "label": "Middle center"
           },
           "info": "Position is automatically optimized for mobile."
         },
