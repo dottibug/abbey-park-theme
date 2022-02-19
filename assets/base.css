@@ -2223,6 +2223,9 @@ input[type='checkbox'] {
 .header__heading-link {
   grid-area: heading;
   justify-self: center;
+}
+
+#shopify-section-header > sticky-header > header > h1 > a > span {
   text-transform: uppercase;
   font-family: minerva-modern, sans-serif;
 }
