@@ -2072,8 +2072,11 @@ input[type='checkbox'] {
 
 .announcement-bar {
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
-  color: rgb(var(--color-foreground));
-  background-color: red;
+  color: rgb(var(--color-foreground)); 
+}
+
+#shopify-section-announcement-bar > div {
+  background-color: #B59A9B;
 }
 
 .announcement-bar__link {
@@ -2101,6 +2104,9 @@ input[type='checkbox'] {
 }
 
 .announcement-bar__message {
+  color: #fff;
+  font-family: 'Lato';
+  text-transform: uppercase;
   text-align: center;
   padding: 1rem 2rem;
   margin: 0;
