@@ -2223,6 +2223,8 @@ input[type='checkbox'] {
 .header__heading-link {
   grid-area: heading;
   justify-self: center;
+  text-transform: uppercase;
+  font-family: minerva-modern, sans-serif;
 }
 
 .header__heading-link {
