@@ -2075,9 +2075,11 @@ input[type='checkbox'] {
   color: rgb(var(--color-foreground)); 
 }
 
+/*
 #shopify-section-announcement-bar > div {
   background-color: #B59A9B;
 }
+*/
 
 .announcement-bar__link {
   display: block;
