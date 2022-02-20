@@ -319,7 +319,9 @@
             {%- comment -%} This is new code {%- endcomment -%}
             {%- if block.settings.picker_type == 'swatch' -%}
               {%- if product.options == 'Material' -%}
+              <div class="swatch-test" {{ block.shopify_attributes }} >
                 <h1> {{ product.options }} </h1>
+              </div>
               {%- endif -%}
             {%- endif -%}
             {%- comment -%} End of new code {%- endcomment -%}
