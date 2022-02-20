@@ -1,0 +1,11 @@
+<div>
+    {% for image in product.images %}
+        {{ image | image_url: width: 300 }}
+    {% endfor %}
+    <h1> {{ product.title }} </h1>
+    <h2> {{ product.price }} </h2>
+    {% for option in product.options %}
+        Product Options: {{ option }}
+    {% endfor %}
+    <p> Product Variants: {{ product.variants}} </p>
+</div>
