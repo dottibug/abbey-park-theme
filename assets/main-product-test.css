@@ -1,6 +1,24 @@
+.swatch-option-name > ul > li {
+list-style-type: none;
+}
+
 .material-14k.Gold.Filled {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: rgb(238, 224, 177);
+}
+
+.material-14k.Rose.Gold.Filled {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(246, 220, 211);
+}
+
+.material-Sterling.Silver {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(226, 229, 230); 
 }
