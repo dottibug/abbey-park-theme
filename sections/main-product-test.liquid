@@ -1,3 +1,6 @@
+{%- comment -%} CSS stylesheet {%- endcomment -%}
+{{ 'main-product-test.css' | asset_url | stylesheet_tag }}
+
 <div>
     <div>
     {% for image in product.images %}
@@ -18,7 +21,7 @@ TESTING <br>
         <p class="swatch-option-name"> {{ product_option.name }} </p> {%- comment -%} Material {%- endcomment -%}
         <ul>
             {% for value in product_option.values %}
-                <li class="{{ value }}">  </li>
+                <li class="material-{{ value }}">  </li>
             {% endfor %}
         </ul>
     {% endif %}
