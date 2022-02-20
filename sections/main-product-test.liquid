@@ -10,12 +10,9 @@
 
     {% for option in product.options %}
         {% if option == 'Material' %}
-        Material option values: 
-        <ul>
-            {% for value in product_option.values %}
-                <li> {{ value }} </li>
-            {% endfor %}
-        </ul>
+        Material 
+        {% else %}
+            Length
         {% endif %}
     {% endfor %}
 </div>
