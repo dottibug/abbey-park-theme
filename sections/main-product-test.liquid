@@ -1,9 +1,7 @@
 <div>
     <div>
     {% for image in product.images %}
-        <div>
             {{ image | image_url: width: 300 | img_tag }}
-        </div>
     {% endfor %}
     </div>
     <h2> Title: {{ product.title }} </h2>
