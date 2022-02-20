@@ -9,16 +9,11 @@
     {% endfor %}
     
     This is a test:
-    {% for value in product_option.values %}
-    <p> {{ value }} </p>
-    {% endfor %}
-
-    This is another test:
     {% for option in product.options %}
         {% if option == 'Material' %}
-        
-           It's a Material
-       
+            {% for product_option in product.options_with_values %}
+                <li> {{ product_option.name }}: {{ product_option.values }} </li>
+            {% endfor %}   
         {% endif %}
     {% endfor %}
 
