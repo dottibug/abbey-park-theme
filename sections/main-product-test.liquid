@@ -32,10 +32,17 @@
     {% endfor %}
 </ul>
 
-TRYING WHAT I WANT TO DO 
-1. This should create 2 divs, with class "swatch-Material" and "swatch-Length"
+TRYING WHAT I WANT TO DO <br> 
+DONE 1. Create 2 divs, with class "swatch-Material" and "swatch-Length" <br>
+2. 
 {% for product_option in product.options_with_values %}
-    <div class="swatch-{{ product_option.name }}"></div>
+    {% if product_option.name == 'Material' %}
+        <div class="swatch-{{ product_option.name }}"></div>
+    {% endif %}
+
+    {% if product_option.name == 'Length' %}
+        <div class="swatch-{{ product_option.name }}"></div>
+    {% endif %}
 {% endfor %}
 
 
