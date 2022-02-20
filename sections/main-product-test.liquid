@@ -27,7 +27,13 @@ TESTING <br>
     {% endif %}
 
     {% if product_option.name == 'Length' %}
-        <div class="swatch-{{ product_option.name }}"></div>
+        <div class="button-{{ product_option.name }}"></div>
+        <p class="button-option-name"> {{ product_option.name }} </p> {%- comment -%} Length {%- endcomment -%}
+        <ul>
+            {% for value in product_option.values %}
+                <li class="length-{{ value }}"> </li>
+            {% endfor %}
+        </ul>
     {% endif %}
 {% endfor %}
 
