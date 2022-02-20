@@ -35,7 +35,7 @@
 TRYING WHAT I WANT TO DO 
 1. This should create 2 divs, with class "swatch-Material" and "swatch-Length"
 {% for product_option in product.options_with_values %}
-    <div class="swatch-{{ product_option }}"></div>
+    <div class="swatch-{{ product_option.name }}"></div>
 {% endfor %}
 
 
