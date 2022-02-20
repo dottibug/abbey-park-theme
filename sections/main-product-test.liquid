@@ -46,14 +46,17 @@ REWRITING ORIGINAL CODE <br>
                 <fieldset class="js product-form__input">
                     <legend class="form__label">{{ option.name }}</legend> 
                     {% for value in option.values %} 
+                    <label class="swatch-label" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                        <input type="radio" 
+                            class="swatch-radio"
                             id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                             name="{{ option.name }}"
                             value="{{ value | escape }}"
                             form="{{ product_form_id }}"
                             {% if option.selected_value == value %}checked{% endif %}
                        >
-                       <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                       <div class="swatch-text"> {{ value }} </div>
+                       {%- comment -%}<label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">{%- endcomment -%}
                         {%- comment -%} {{ value }} {%- endcomment -%}
                       </label> 
                     {% endfor %}
