@@ -19,6 +19,18 @@
         {% endif %}
     {% endfor %}
 
+    A new test:
+ <ul>
+    {% for product_option in product.options_with_values %}
+        {% if product_option.name == 'Material' %}
+                {% for value in product_option.values %}
+                    <li> {{value}} </li>
+                {% endfor %}
+            <li> {{ product_option }} </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
 
 </div>
 
