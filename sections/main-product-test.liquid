@@ -1,19 +1,10 @@
 <div>
     {% for image in product.images %}
-        {{ image | image_url: width: 300 }}
+        {{ image | image_url: width: 300 | img_tag }}
     {% endfor %}
-    <h1> {{ product.title }} </h1>
-    <h2> {{ product.price }} </h2>
+    <h2> Title: {{ product.title }} </h2>
+    <h3> Price: {{ product.price }} </h3>
     {% for option in product.options %}
-        Product Options: {{ option }}
+        Product Options: {{ option }} <br>
     {% endfor %}
-    <p> Product Variants: {{ product.variants}} </p>
 </div>
-
-{% schema %}
-{
-  "name": "main-product-test",
-  "tag": "section",
-  "class": "section"
-}
-{% endschema %}
