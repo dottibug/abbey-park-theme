@@ -9,39 +9,16 @@
     {% for option in product.options %}
         Product Options: {{ option }} <br>
     {% endfor %}
-    
-    This is a test:
-    {% for option in product.options %}
-        {% if option == 'Material' %}
-            {% for product_option in product.options_with_values %}
-                <li> {{ product_option.name }}: {{ product_option.values }} </li>
-            {% endfor %}   
-        {% else %}
-            Not a material
-        {% endif %}
-    {% endfor %}
 
-    A new test:
- <ul>
-    {% for product_option in product.options_with_values %}
-        {% if product_option.name == 'Material' %}
-                {% for value in product_option.values %}
-                    <li> {{value}} </li>
-                {% endfor %}
-        {% endif %}
-    {% endfor %}
-</ul>
-
-TRYING WHAT I WANT TO DO <br> 
-DONE 1. Create 2 divs, with class "swatch-Material" and "swatch-Length" <br>
-2. 
+TESTING <br> 
+ 
 {% for product_option in product.options_with_values %}
     {% if product_option.name == 'Material' %}
         <div class="swatch-{{ product_option.name }}"></div>
         <p class="swatch-option-name"> {{ product_option.name }} </p> {%- comment -%} Material {%- endcomment -%}
         <ul>
             {% for value in product_option.values %}
-                <li class="value">  </li>
+                <li class="{{ value }}">  </li>
             {% endfor %}
         </ul>
     {% endif %}
