@@ -315,6 +315,13 @@
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
+
+            {%- comment -%} This is new code {%- endcomment -%}
+            {%- if product.options == 'Material' -%}
+              {{ product.options_by_name }}
+            {%- endif -%}
+            {%- comment -%} End of new code {%- endcomment -%}
+
               {%- if block.settings.picker_type == 'button' -%}
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
@@ -707,6 +714,10 @@
           "type": "select",
           "id": "picker_type",
           "options": [
+            {
+              "value": "swatch",
+              "label": "Swatch"
+            },
             {
               "value": "dropdown",
               "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__1.label"
