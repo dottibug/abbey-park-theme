@@ -7,14 +7,24 @@
     {% for option in product.options %}
         Product Options: {{ option }} <br>
     {% endfor %}
+    
+    This is a test:
+    {% for value in product_option.values %}
+        {{ value }}
+    {% endfor %}
 
+    This is another test:
     {% for option in product.options %}
         {% if option == 'Material' %}
-        Material 
-        {% else %}
-            Length
+        
+            {% for value in product_option.values %}
+                {{ value }}
+            {% endfor %}
+       
         {% endif %}
     {% endfor %}
+
+
 </div>
 
 {%- comment -%}
