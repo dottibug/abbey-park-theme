@@ -31,7 +31,7 @@ TESTING <br>
         <p class="button-option-name"> {{ product_option.name }} </p> {%- comment -%} Length {%- endcomment -%}
         <ul>
             {% for value in product_option.values %}
-                <li class="length-{{ value }}"> </li>
+                <li class="length"> {{ value }} </li>
             {% endfor %}
         </ul>
     {% endif %}
