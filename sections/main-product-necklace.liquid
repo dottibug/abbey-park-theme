@@ -336,6 +336,7 @@
                                               form="{{ product_form_id }}"
                                               {% if option.selected_value == value %}checked{% endif %}
                                           >
+                                          {{ value }}
                                       </label> 
                                   {% endfor %}
                           </fieldset>
@@ -343,6 +344,7 @@
                       {% endif %}
                       {%- endcomment -%}
                   {% endfor %}
+                          {%- comment -%}
                           <div class="swatch-text"> 
                               {% for product_option in product.options_with_values %}
                                   {% if product_option.name == 'Material' %}
@@ -354,6 +356,7 @@
                                   {% endif %}
                               {% endfor %}
                           </div>
+                          {%- endcomment -%}
                           <script type="application/json">
                               {{ product.variants | json }}
                           </script>
