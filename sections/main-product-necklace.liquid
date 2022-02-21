@@ -338,11 +338,32 @@
                                               {% if option.selected_value == value %}checked{% endif %}
                                           >
                                       </label> 
-                                      <div class="swatch--name" value="{{ value | escape }}" 
-                                      {% if option.selected_value == value %}
-                                      style="visibility:visible;"{% else %}style="visibility:hidden;"{% endif %}
-                                      > {{ value }} </div>
+                                      <div class="swatch--name" value="{{ value | escape }}" > {{ value }} </div>
                                   {% endfor %}
+
+                                  <script>
+                                    document.querySelectorAll("input.input--swatch-option").forEach(radioInput =>
+                                      radioInput.addEventListener("click", findDivMatch)
+                                      );
+
+                                      function findDivMatch() {
+                                        let checkedRadio = document.querySelectorAll("input[checked]");
+                                        let checkedRadioValue = checkedRadio.getAttribute("value");
+                                        let divSwatchName = Array.from(document.querySelectorAll("div.swatch--name"));
+
+                                        for(let i = 0; i < divSwatchName.length; i++) {
+                                        let swatchValue = divSwatchName[i].getAttribute("value");
+
+                                        if(swatchValue === checkedRadioValue) {
+                                          divSwatchName[i].style.visibility="visible";
+                                        } else {
+                                          divSwatchName[i].style.visibility="hidden";
+                                        }
+                                      }
+
+                                      }
+
+                                  </script>
                        
                                   {%- comment -%} 
                                           {% assign selectedRadio = option.selected_value %}
