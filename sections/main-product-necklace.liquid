@@ -316,14 +316,16 @@
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
 
-            {%- comment -%} Adding TEST code {%- endcomment -%}
-            {%- if block.settings.picker_type == 'swatch' -%}
-            <div>                
-              <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+              {%- comment -%} Adding TEST code {%- endcomment -%}
+              {%- if block.settings.picker_type == 'swatch' -%}
+                <div>                
+                <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {% for option in product.options_with_values %}
-                      {% if option.name == 'Material' %}
+                      {%- comment -%}
+                      {% if option.name == 'Material' %} {% endif %}
+                      {%- endcomment -%}
                           <fieldset class="js product-form__input">
-                              <legend class="form__label">{{ option.name }}</legend> 
+                              <legend class="form__label swatch-option-name">{{ option.name }}</legend> 
                                   {% for value in option.values %} 
                                       <label class="swatch-label" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                                           <input type="radio" 
@@ -337,7 +339,9 @@
                                       </label> 
                                   {% endfor %}
                           </fieldset>
+                      {%- comment -%}
                       {% endif %}
+                      {%- endcomment -%}
                   {% endfor %}
                           <div class="swatch-text"> 
                               {% for product_option in product.options_with_values %}
@@ -353,10 +357,10 @@
                           <script type="application/json">
                               {{ product.variants | json }}
                           </script>
-              </variant-radios> 
-          </div>
-          {%- endif -%}
-          {%- endunless -%}
+                </variant-radios> 
+                </div>
+              {%- endif -%}
+            {%- endunless -%}
             
               {%- comment -%}
               {%- if block.settings.picker_type == 'button' -%}
