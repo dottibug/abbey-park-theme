@@ -74,13 +74,6 @@ REWRITING ORIGINAL CODE <br>
                         {% endif %}
                         {% endfor %}
                     {% endfor %}
-                    
-                    
-                    {% for value in product_option.values %}
-                        {% if product_option.selected_value == value %}
-                            {{ value }}
-                        {% endif %}
-                    {% endfor %}
                  </div>
                 <script type="application/json">
                     {{ product.variants | json }}
@@ -128,3 +121,40 @@ for each product option
     if == Bracelet Size...
     if == Constellation...
 {%- endcomment -%}
+
+<script type="application/ld+json">
+    {
+      "@context": "http://schema.org/",
+      "@type": "Product",
+      "name": {{ product.title | json }},
+      "url": {{ shop.url | append: product.url | json }},
+      {% if seo_media -%}
+        {%- assign media_size = seo_media.preview_image.width | append: 'x' -%}
+        "image": [
+          {{ seo_media | img_url: media_size | prepend: "https:" | json }}
+        ],
+      {%- endif %}
+      "description": {{ product.description | strip_html | json }},
+      {% if product.selected_or_first_available_variant.sku != blank -%}
+        "sku": {{ product.selected_or_first_available_variant.sku | json }},
+      {%- endif %}
+      "brand": {
+        "@type": "Thing",
+        "name": {{ product.vendor | json }}
+      },
+      "offers": [
+        {%- for variant in product.variants -%}
+          {
+            "@type" : "Offer",
+            {%- if variant.sku != blank -%}
+              "sku": {{ variant.sku | json }},
+            {%- endif -%}
+            "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+            "price" : {{ variant.price | divided_by: 100.00 | json }},
+            "priceCurrency" : {{ cart.currency.iso_code | json }},
+            "url" : {{ shop.url | append: variant.url | json }}
+          }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      ]
+    }
+  </script>
