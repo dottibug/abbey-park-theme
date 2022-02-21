@@ -317,13 +317,6 @@
             {%- unless product.has_only_default_variant -%}
 
               {%- comment -%} Adding TEST code {%- endcomment -%}
-              {%- comment -%} 
-              TODO: script tag with js
-              query selector all radio inputs with class "input--swatch-option"
-              !element.hasattribute (if the radio input does NOT have attribute "checked"
-              then toggle or add css class to change visibility to hidden
-              else visibility is visible
-              {%- endcomment -%}
 
               {%- if block.settings.picker_type == 'swatch' -%}
                 <div>                
@@ -345,8 +338,32 @@
                                               {% if option.selected_value == value %}checked{% endif %}
                                           >
                                       </label> 
-                                      <div class="swatch--name"> {{ value }} </div>
+                                      <div class="swatch--name" value="{{ value | escape }}"> {{ value }} </div>
                                   {% endfor %}
+                                  <script>
+                                    let radioInputs = document.querySelectorAll("input.input--swatch-option");
+                                    let matchedDiv = undefined;
+
+                                    function findDivMatch(radio) {
+                                      let radioValue = radio.getAttribute("value");
+                                      let swatchName = Array.from(document.querySelectorAll("div.swatch--name"));
+
+                                      for(let i = 0; i < swatchName.length; i++) {
+                                        let swatchValue = swatchName[i].getAttribute("value");
+
+                                        if(swatchValue === radioValue) {
+                                          matchedDiv = swatchName[i];
+                                        }
+                                      }
+                                    }
+
+                                    radioInputs.forEach(function(radio) {
+                                      if(!radio.hasAttribute("checked")) {
+                                        findDivMatch(radio);
+                                        matchedDiv.style.visibility = "hidden";
+                                      }
+                                    })
+                                  </script>
                           </fieldset>
                       {%- comment -%}
                       {% endif %}
