@@ -338,10 +338,23 @@
                                               {% if option.selected_value == value %}checked{% endif %}
                                           >
                                       </label> 
-                                      <div class="swatch--name" value="{{ value | escape }}"> {{ value }} </div>
-                                      {%- comment -%} Option2: if option selected value attribute == div value, style visible, else style hidden{%- endcomment -%}
+                                      <div class="swatch--name" value="{{ value | escape }}" 
+                                      {% if option.selected_value == value %}
+                                      style="visibility:visible;"{% else %}style="visibility:hidden;"{% endif %}
+                                      > {{ value }} </div>
                                   {% endfor %}
-                                  {%- comment -%} nearly works, but trying option2 above first
+                       
+                                  {%- comment -%} 
+                                          {% assign selectedRadio = option.selected_value %}
+                                  <script>
+                                    let selectedRadioValue = {{selectedRadio}}.getAttribute("value");
+                                    let matchedDiv = document.querySelectorAll("div[value=selectedRadioValue]");
+
+                                    if(selectedRadioValue === matchedDiv.getAttribute("value")) {
+                                      matchedDiv.style.visibility="visible";
+                                    } 
+
+                                  </script>
                                   <script>
                                     let radioInputs = document.querySelectorAll("input.input--swatch-option");
                                     let matchedDiv = undefined;
