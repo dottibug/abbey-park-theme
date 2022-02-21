@@ -316,16 +316,49 @@
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
 
-            {%- comment -%} This is new code {%- endcomment -%}
+            {%- comment -%} Adding TEST code {%- endcomment -%}
             {%- if block.settings.picker_type == 'swatch' -%}
-              {%- if product.options == 'Material' -%}
-              <div class="swatch-test" {{ block.shopify_attributes }} >
-                <h1> {{ product.options }} </h1>
-              </div>
-              {%- endif -%}
-            {%- endif -%}
-            {%- comment -%} End of new code {%- endcomment -%}
-
+            <div>                
+              <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                  {% for option in product.options_with_values %}
+                      {% if option.name == 'Material' %}
+                          <fieldset class="js product-form__input">
+                              <legend class="form__label">{{ option.name }}</legend> 
+                                  {% for value in option.values %} 
+                                      <label class="swatch-label" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                                          <input type="radio" 
+                                              class="swatch-radio"
+                                              id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                              name="{{ option.name }}"
+                                              value="{{ value | escape }}"
+                                              form="{{ product_form_id }}"
+                                              {% if option.selected_value == value %}checked{% endif %}
+                                          >
+                                      </label> 
+                                  {% endfor %}
+                          </fieldset>
+                      {% endif %}
+                  {% endfor %}
+                          <div class="swatch-text"> 
+                              {% for product_option in product.options_with_values %}
+                                  {% if product_option.name == 'Material' %}
+                                      {% for value in product_option.values %}
+                                          {% if product_option.selected_value == value %}
+                                              <p> {{ value }} </p>
+                                          {% endif %}
+                                      {% endfor %}
+                                  {% endif %}
+                              {% endfor %}
+                          </div>
+                          <script type="application/json">
+                              {{ product.variants | json }}
+                          </script>
+              </variant-radios> 
+          </div>
+          {%- endif -%}
+          {%- endunless -%}
+            
+              {%- comment -%}
               {%- if block.settings.picker_type == 'button' -%}
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
@@ -348,6 +381,7 @@
                     {{ product.variants | json }}
                   </script>
                 </variant-radios>
+                
               {%- else -%}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
@@ -371,13 +405,13 @@
                       </div>
                     </div>
                   {%- endfor -%}
-
                   <script type="application/json">
                     {{ product.variants | json }}
                   </script>
                 </variant-selects>
               {%- endif -%}
             {%- endunless -%}
+            {%- endcomment -%}
 
             <noscript class="product-form__noscript-wrapper-{{ section.id }}">
               <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
