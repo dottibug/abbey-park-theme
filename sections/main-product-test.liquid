@@ -41,11 +41,11 @@ REWRITING ORIGINAL CODE <br>
 
 
             {%- comment -%} Do I need shopify attributes in line 45? {%- endcomment -%}
-           {% for option in product.options_with_values %}
-            {% if option.name == 'Material' %}
+            
                 
             <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                 {% for option in product.options_with_values %}
+                {% if option.name == 'Material' %}
                 <fieldset class="js product-form__input">
                     <legend class="form__label">{{ option.name }}</legend> 
                     {% for value in option.values %} 
@@ -62,6 +62,7 @@ REWRITING ORIGINAL CODE <br>
                         {%- comment -%} {{ value }} {%- endcomment -%}
                       </label> 
                     {% endfor %}
+                    {% endif %}
                 </fieldset>
                 {% endfor %}
                 <div class="swatch-text"> 
@@ -71,9 +72,7 @@ REWRITING ORIGINAL CODE <br>
                     {{ product.variants | json }}
                   </script>
             </variant-radios> 
-
-            {% endif %}
-            {% endfor %}
+          
 
 
 {%- comment -%} ORIGINAL CODE
