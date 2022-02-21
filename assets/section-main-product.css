@@ -1166,7 +1166,29 @@ a.product__text {
 
 /* TEST css main-product-necklace section */
 
+.radios--swatch {
+  /**/
+}
 
+.fieldset--swatch-Material {
+
+}
+
+.fieldset--swatch-Length {
+
+}
+
+.legend--swatch-option {
+
+}
+
+.label--swatch-option {
+
+}
+
+.input--swatch-option {
+  
+}
 
 .swatch-option-name {
   grid-area: option;
