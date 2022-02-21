@@ -317,6 +317,14 @@
             {%- unless product.has_only_default_variant -%}
 
               {%- comment -%} Adding TEST code {%- endcomment -%}
+              {%- comment -%} 
+              TODO: script tag with js
+              query selector all radio inputs with class "input--swatch-option"
+              !element.hasattribute (if the radio input does NOT have attribute "checked"
+              then toggle or add css class to change visibility to hidden
+              else visibility is visible
+              {%- endcomment -%}
+
               {%- if block.settings.picker_type == 'swatch' -%}
                 <div>                
                 <variant-radios class="no-js-hidden radios--swatch-container" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
