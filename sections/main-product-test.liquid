@@ -56,7 +56,11 @@ REWRITING ORIGINAL CODE <br>
                             {% if option.selected_value == value %}checked{% endif %}
                        >
                        <div class="swatch-text"> 
-                           {{ option.selected_value }}
+                           {% for value in option.values %}
+                               {% if value == option.selected_value %}
+                                    {{ value }}
+                                {% endif %}
+                           {% endfor %}
                         </div>
                        {%- comment -%}<label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">{%- endcomment -%}
                         {%- comment -%} {{ value }} {%- endcomment -%}
