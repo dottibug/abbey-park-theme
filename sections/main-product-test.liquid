@@ -67,6 +67,11 @@ REWRITING ORIGINAL CODE <br>
                 {% endfor %}
                 <div class="swatch-text"> 
                     <p> {{ option.selected_value }} </p>
+                    {% for value in option.values %}
+                        {% if option.selected_value == value %}
+                            {{ value }}
+                        {% endif %}
+                    {% endfor %}
                  </div>
                 <script type="application/json">
                     {{ product.variants | json }}
