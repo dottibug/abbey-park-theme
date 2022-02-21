@@ -58,13 +58,13 @@ REWRITING ORIGINAL CODE <br>
                        {%- comment -%}<label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">{%- endcomment -%}
                         {%- comment -%} {{ value }} {%- endcomment -%}
                       </label> 
-                      <div class="swatch-text"> 
-                        {% assign selectedValue = option.selected_value %}
-                        {{ selectedValue }}
-                     </div>
                     {% endfor %}
                 </fieldset>
                 {% endfor %}
+                <div class="swatch-text"> 
+                    {% assign selectedValue = option.selected_value %}
+                    {{ selectedValue }}
+                 </div>
                 <script type="application/json">
                     {{ product.variants | json }}
                   </script>
