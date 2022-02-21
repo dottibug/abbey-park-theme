@@ -55,12 +55,13 @@ REWRITING ORIGINAL CODE <br>
                             form="{{ product_form_id }}"
                             {% if option.selected_value == value %}checked{% endif %}
                        >
-                       <div class="swatch-text"> 
-                           {{ value }}
-                        </div>
                        {%- comment -%}<label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">{%- endcomment -%}
                         {%- comment -%} {{ value }} {%- endcomment -%}
                       </label> 
+                      <div class="swatch-text"> 
+                        {% assign selectedValue = option.selected_value %}
+                        {{ selectedValue }}
+                     </div>
                     {% endfor %}
                 </fieldset>
                 {% endfor %}
