@@ -339,7 +339,9 @@
                                           >
                                       </label> 
                                       <div class="swatch--name" value="{{ value | escape }}"> {{ value }} </div>
+                                      {%- comment -%} Option2: if option selected value attribute == div value, style visible, else style hidden{%- endcomment -%}
                                   {% endfor %}
+                                  {%- comment -%} nearly works, but trying option2 above first
                                   <script>
                                     let radioInputs = document.querySelectorAll("input.input--swatch-option");
                                     let matchedDiv = undefined;
@@ -364,6 +366,7 @@
                                       }
                                     })
                                   </script>
+                                  {%- endcomment -%}
                           </fieldset>
                       {%- comment -%}
                       {% endif %}
