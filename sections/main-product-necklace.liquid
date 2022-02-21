@@ -319,15 +319,15 @@
               {%- comment -%} Adding TEST code {%- endcomment -%}
               {%- if block.settings.picker_type == 'swatch' -%}
                 <div>                
-                <variant-radios class="no-js-hidden radios--swatch" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+                <variant-radios class="no-js-hidden radios--swatch-container" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {% for option in product.options_with_values %}
                       {%- comment -%}
                       {% if option.name == 'Material' %} {% endif %}
                       {%- endcomment -%}
                           <fieldset class="js product-form__input fieldset--swatch-{{ option.name }}">
-                              <legend class="form__label legend--swatch-option">{{ option.name }}</legend> 
+                              <legend class="form__label legend--swatch-option-name">{{ option.name }}</legend> 
                                   {% for value in option.values %} 
-                                      <label class="label--swatch-option" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                                      <label class="label--swatch-{{value}}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                                           <input type="radio" 
                                               class="input--swatch-option"
                                               id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"

@@ -1166,7 +1166,7 @@ a.product__text {
 
 /* TEST css main-product-necklace section */
 
-.radios--swatch {
+.radios--swatch-container {
   /**/
 }
 
@@ -1178,16 +1178,24 @@ a.product__text {
 
 }
 
-.legend--swatch-option {
+.legend--swatch-option-name {
 
 }
 
-.label--swatch-option {
+.label--swatch-14k.Gold.Filled {
+
+}
+
+.label--swatch-14k.Rose.Gold.Filled {
+
+}
+
+.label--swatch-Sterling.Silver {
 
 }
 
 .input--swatch-option {
-  
+
 }
 
 .swatch-option-name {
