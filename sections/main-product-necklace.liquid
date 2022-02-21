@@ -335,6 +335,9 @@
                                               name="{{ option.name }}"
                                               value="{{ value | escape }}"
                                               form="{{ product_form_id }}"
+                                              {% if option.selected_value %} data-selected="true" 
+                                              {% else %} data-selected="false"
+                                              {% endif %}
                                               {% if option.selected_value == value %}checked{% endif %}
                                           >
                                       </label> 
