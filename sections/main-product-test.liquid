@@ -37,74 +37,45 @@
     {% for option in product.options %}
         Product Options: {{ option }} <br>
     {% endfor %}
-
-TESTING <br> 
- 
-{% for product_option in product.options_with_values %}
-    {% if product_option.name == 'Material' %}
-        <div class="swatch-{{ product_option.name }}"></div>
-        <p class="swatch-option-name"> {{ product_option.name }} </p> {%- comment -%} Material {%- endcomment -%}
-        <ul>
-            {% for value in product_option.values %}
-                <li class="material-{{ value }}">  </li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-
-    {% if product_option.name == 'Length' %}
-        <div class="button-{{ product_option.name }}"></div>
-        <p class="button-option-name"> {{ product_option.name }} </p> {%- comment -%} Length {%- endcomment -%}
-        <ul>
-            {% for value in product_option.values %}
-                <li class="length"> {{ value }} </li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-{% endfor %}
+</div>
 
 REWRITING ORIGINAL CODE <br>
-
-
-            {%- comment -%} Do I need shopify attributes in line 45? {%- endcomment -%}
-            
-                
-            <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
-                {% for option in product.options_with_values %}
-                {% if option.name == 'Material' %}
+<div>                
+    <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
+        {% for option in product.options_with_values %}
+            {% if option.name == 'Material' %}
                 <fieldset class="js product-form__input">
                     <legend class="form__label">{{ option.name }}</legend> 
-                    {% for value in option.values %} 
-                    <label class="swatch-label" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                       <input type="radio" 
-                            class="swatch-radio"
-                            id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                            name="{{ option.name }}"
-                            value="{{ value | escape }}"
-                            form="{{ product_form_id }}"
-                            {% if option.selected_value == value %}checked{% endif %}
-                       >
-                       {%- comment -%}<label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">{%- endcomment -%}
-                        {%- comment -%} {{ value }} {%- endcomment -%}
-                      </label> 
-                    {% endfor %}
-                    {% endif %}
+                        {% for value in option.values %} 
+                            <label class="swatch-label" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                                <input type="radio" 
+                                    class="swatch-radio"
+                                    id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                    name="{{ option.name }}"
+                                    value="{{ value | escape }}"
+                                    form="{{ product_form_id }}"
+                                    {% if option.selected_value == value %}checked{% endif %}
+                                >
+                            </label> 
+                        {% endfor %}
                 </fieldset>
-                {% endfor %}
+            {% endif %}
+        {% endfor %}
                 <div class="swatch-text"> 
                     {% for product_option in product.options_with_values %}
-                    {% if product_option.name == 'Material' %}
-                    {% for value in product_option.values %}
-                        {% if product_option.selected_value == value %}
-                            <p> {{ value }} </p>
-                        {% endif %}
-                        {% endfor %}
+                        {% if product_option.name == 'Material' %}
+                            {% for value in product_option.values %}
+                                {% if product_option.selected_value == value %}
+                                    <p> {{ value }} </p>
+                                {% endif %}
+                            {% endfor %}
                         {% endif %}
                     {% endfor %}
-                 </div>
+                </div>
                 <script type="application/json">
                     {{ product.variants | json }}
-                  </script>
-            </variant-radios> 
+                </script>
+    </variant-radios> 
 </div>
 
 {%- comment -%}
