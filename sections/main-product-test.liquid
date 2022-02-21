@@ -66,9 +66,8 @@ REWRITING ORIGINAL CODE <br>
                 </fieldset>
                 {% endfor %}
                 <div class="swatch-text"> 
-                    <p> {{ option.selected_value }} </p>
-                    {% for value in option.values %}
-                        {% if option.selected_value == value %}
+                    {% for value in product_option.values %}
+                        {% if product_option.selected_value == value %}
                             {{ value }}
                         {% endif %}
                     {% endfor %}
