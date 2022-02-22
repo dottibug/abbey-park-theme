@@ -1170,7 +1170,7 @@ a.product__text {
   /**/
 }
 
-.legend--swatch-option-name {
+.swatch--option-name {
   grid-area: option-name;
   text-transform: uppercase;
 }
@@ -1190,7 +1190,7 @@ a.product__text {
         "swatch-gold swatch-silver swatch-rose-gold swatch-name";
 }
 
-.label--swatch-14k.Gold.Filled {
+.swatch--label-14k.Gold.Filled {
   grid-area: swatch-gold;
   display: flex;
   align-items: center;
@@ -1205,7 +1205,7 @@ a.product__text {
   background-color: wheat;
 }
 
-.label--swatch-14k.Rose.Gold.Filled {
+.swatch--label-14k.Rose.Gold.Filled {
   grid-area: swatch-rose-gold;
   display: flex;
   align-items: center;
@@ -1219,7 +1219,7 @@ a.product__text {
   background-color: #F3B6B6;
 }
 
-.label--swatch-Sterling.Silver {
+.swatch--label-Sterling.Silver {
   grid-area: swatch-silver;
   display: flex;
   align-items: center;

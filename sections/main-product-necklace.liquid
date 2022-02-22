@@ -325,11 +325,11 @@
                       {%- comment -%}
                       {% if option.name == 'Material' %} {% endif %}
                       {%- endcomment -%}
-                      <div class="option--{{option.name}}">
+                      <div class="swatch--wrapper-{{ option.name }}">
                           <fieldset class="js product-form__input">
-                              <legend class="form__label legend--swatch-option-name">{{ option.name }}</legend> 
+                              <legend class="form__label swatch--option-name">{{ option.name }}</legend> 
                                   {% for value in option.values %} 
-                                      <label class="label--swatch-{{value}}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                                      <label class="swatch--label swatch--label-{{ value }}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                                           <input type="radio" 
                                               class="input--swatch-option visually-hidden"
                                               id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
@@ -339,7 +339,7 @@
                                               {% if option.selected_value == value %}checked{% endif %}
                                           >
                                         </label>
-                                      <div class="swatch--option-name option-{{option.name}}" value="{{ value | escape }}" > {{ value }} </div>
+                                      <div class="swatch--option-variants swatch--variant-{{option.name}}" value="{{ value | escape }}" > {{ value }} </div>
                                   {% endfor %}
                           </fieldset>
                         </div>
