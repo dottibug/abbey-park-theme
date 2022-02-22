@@ -325,6 +325,7 @@
                       {%- comment -%}
                       {% if option.name == 'Material' %} {% endif %}
                       {%- endcomment -%}
+                      <div class="option--{{option.name}}">
                           <fieldset class="js product-form__input fieldset--swatch-{{ option.name }}">
                               <legend class="form__label legend--swatch-option-name">{{ option.name }}</legend> 
                                   {% for value in option.values %} 
@@ -335,6 +336,8 @@
                                               name="{{ option.name }}"
                                               value="{{ value | escape }}"
                                               form="{{ product_form_id }}"
+
+
                                               {% if option.selected_value %} data-selected="true" 
                                               {% else %} data-selected="false"
                                               {% endif %}
@@ -344,23 +347,11 @@
                                       <div class="swatch--name" value="{{ value | escape }}" > {{ value }} </div>
                                   {% endfor %}
                           </fieldset>
+                        </div>
                       {%- comment -%}
                       {% endif %}
                       {%- endcomment -%}
                   {% endfor %}
-                          {%- comment -%}
-                          <div class="swatch-text"> 
-                              {% for product_option in product.options_with_values %}
-                                  {% if product_option.name == 'Material' %}
-                                      {% for value in product_option.values %}
-                                          {% if product_option.selected_value == value %}
-                                              <p> {{ value }} </p>
-                                          {% endif %}
-                                      {% endfor %}
-                                  {% endif %}
-                              {% endfor %}
-                          </div>
-                          {%- endcomment -%}
                           <script type="application/json">
                               {{ product.variants | json }}
                           </script>
