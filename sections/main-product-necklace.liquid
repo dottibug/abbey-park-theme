@@ -329,20 +329,16 @@
                           <fieldset class="js product-form__input">
                               <legend class="form__label legend--swatch-option-name">{{ option.name }}</legend> 
                                   {% for value in option.values %} 
-                                      <label class="label--swatch-{{value}}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"></label>
+                                      <label class="label--swatch-{{value}}" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                                           <input type="radio" 
                                               class="input--swatch-option visually-hidden"
                                               id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                                               name="{{ option.name }}"
                                               value="{{ value | escape }}"
                                               form="{{ product_form_id }}"
-
-
-                                              {% if option.selected_value %} data-selected="true" 
-                                              {% else %} data-selected="false"
-                                              {% endif %}
                                               {% if option.selected_value == value %}checked{% endif %}
                                           >
+                                        </label>
                                       <div class="swatch--name" value="{{ value | escape }}" > {{ value }} </div>
                                   {% endfor %}
                           </fieldset>
