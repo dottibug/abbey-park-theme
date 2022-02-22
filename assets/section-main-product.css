@@ -1175,11 +1175,13 @@ a.product__text {
   text-transform: uppercase;
 }
 
+/*
 .input--swatch-option {
   opacity: 0;
   position: absolute;
   z-index: -1;
 }
+*/
 
 .fieldset--swatch-Material {
   display: grid;
@@ -1229,12 +1231,4 @@ a.product__text {
   width: 30px;
   height: 30px;
   background-color: silver;
-}
-
-.fieldset--swatch-Material .swatch--name {
-  grid-area: swatch-name;
-}
-
-.fieldset--swatch-Length {
-
 }
