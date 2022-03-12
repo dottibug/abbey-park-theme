@@ -16,4 +16,5 @@
 
 .main--accordion-info {
 	margin-left: 100px;
+  grid-area: info;
 }
