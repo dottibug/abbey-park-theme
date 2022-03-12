@@ -8,6 +8,7 @@
   grid-area: sidebar;
 	width: 100px;
   overflow-x: hidden;
+  display: inline-block;
 }
 
 .sidebar--navigation-links a {
