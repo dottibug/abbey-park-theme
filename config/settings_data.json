@@ -94,10 +94,22 @@
               "heading": "Have questions?",
               "heading_size": "medium"
             }
+          },
+          "042fd02f-8c44-4235-8fe4-28e5d107c623": {
+            "type": "buttons",
+            "settings": {
+              "button_label_1": "FAQs",
+              "button_link_1": "",
+              "button_style_secondary_1": false,
+              "button_label_2": "",
+              "button_link_2": "",
+              "button_style_secondary_2": false
+            }
           }
         },
         "block_order": [
-          "29b5daea-85de-4069-99da-73f42a1cdf88"
+          "29b5daea-85de-4069-99da-73f42a1cdf88",
+          "042fd02f-8c44-4235-8fe4-28e5d107c623"
         ],
         "settings": {
           "image": "shopify:\/\/shop_images\/content-pixie-_ysU7TqBiZI-unsplash-banner-resize.jpg",
