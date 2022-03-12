@@ -7,6 +7,7 @@
 .sidebar--navigation-links {
   grid-area: sidebar;
 	width: 100px;
+  overflow-x: hidden;
 }
 
 .sidebar--navigation-links a {
