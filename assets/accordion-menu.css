@@ -99,9 +99,9 @@
 }
 
 .collapsible-content-wrapper-narrow {
-  margin: 0 auto;
+  margin: 0;
   padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding-left: 0;
   max-width: 73.4rem;
 }
 
