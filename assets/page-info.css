@@ -7,12 +7,6 @@
 .sidebar--navigation-links {
   grid-area: sidebar;
 	width: 100px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
 }
 
 .sidebar--navigation-links a {
