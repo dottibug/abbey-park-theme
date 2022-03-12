@@ -12,7 +12,7 @@
 
 .sidebar--navigation-links a {
 	text-decoration: none;
-  display: inline-block;
+  display: block;
 }
 
 .main--accordion-info {
