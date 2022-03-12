@@ -1,4 +1,4 @@
-.wrapper--info-content {
+.wrapper--sidebar-info {
 	display: grid;
   	grid-template-areas: 
       "sidebar info";
@@ -8,7 +8,6 @@
   grid-area: sidebar;
 	width: 100px;
   overflow-x: hidden;
-  display: inline-block;
 }
 
 .sidebar--navigation-links a {
@@ -16,7 +15,7 @@
   
 }
 
-.main--accordion-info {
+.main--accordion-info p {
 	margin-left: 100px;
   grid-area: info;
 }
