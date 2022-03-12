@@ -47,46 +47,62 @@
         "show_text_below": true
       }
     },
-    "1647067189416a0625": {
-      "type": "image-with-text",
-      "disabled": true,
+    "164706719653db19be": {
+      "type": "collapsible-content",
       "blocks": {
-        "164706718904031b18-0": {
-          "type": "heading",
+        "1647067196c1c99eb9-0": {
+          "type": "collapsible_row",
           "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
+            "heading": "Canada",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
           }
         },
-        "164706718904031b18-1": {
-          "type": "text",
+        "1647067196c1c99eb9-1": {
+          "type": "collapsible_row",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
           }
         },
-        "164706718904031b18-2": {
-          "type": "button",
+        "1647067196c1c99eb9-2": {
+          "type": "collapsible_row",
           "settings": {
-            "button_label": "Button label",
-            "button_link": ""
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "1647067196c1c99eb9-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "164706718904031b18-0",
-        "164706718904031b18-1",
-        "164706718904031b18-2"
+        "1647067196c1c99eb9-0",
+        "1647067196c1c99eb9-1",
+        "1647067196c1c99eb9-2",
+        "1647067196c1c99eb9-3"
       ],
       "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_alignment": "center",
+        "layout": "none",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "left",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -95,6 +111,6 @@
   "order": [
     "main",
     "1647066414740fbfc1",
-    "1647067189416a0625"
+    "164706719653db19be"
   ]
 }
