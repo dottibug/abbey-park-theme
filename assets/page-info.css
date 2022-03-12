@@ -6,7 +6,6 @@
 
 .sidebar--navigation-links {
   grid-area: sidebar;
-	width: 100px;
   overflow-x: hidden;
 }
 
@@ -16,6 +15,5 @@
 }
 
 .main--accordion-info p {
-	margin-left: 100px;
   grid-area: info;
 }
