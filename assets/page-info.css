@@ -13,3 +13,7 @@
 	text-decoration: none;
   display: block;
 }
+
+.main--accordion-info {
+	margin-left: 100px;
+}
