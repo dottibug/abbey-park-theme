@@ -2,6 +2,7 @@
 	display: grid;
   	grid-template-areas: 
       "sidebar info";
+  grid-template-columns: 1fr 2fr;
 }
 
 .sidebar--navigation-links {
