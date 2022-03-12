@@ -8,6 +8,7 @@
 .sidebar--navigation-links {
   grid-area: sidebar;
 	width: 100px;
+  position: absolute;
   
 }
 
