@@ -76,27 +76,17 @@
             "row_content": "",
             "page": ""
           }
-        },
-        "1647067196c1c99eb9-3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
         }
       },
       "block_order": [
         "1647067196c1c99eb9-0",
         "1647067196c1c99eb9-1",
-        "1647067196c1c99eb9-2",
-        "1647067196c1c99eb9-3"
+        "1647067196c1c99eb9-2"
       ],
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
-        "heading_alignment": "center",
+        "heading": "Shipping & Delivery",
+        "heading_alignment": "left",
         "layout": "none",
         "color_scheme": "background-1",
         "container_color_scheme": "background-2",
