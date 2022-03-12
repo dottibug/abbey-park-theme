@@ -1,6 +1,5 @@
 .wrapper--info-content {
 	display: grid;
   	grid-template-areas: 
-      "sidebar"
-      "info";
+      "sidebar info";
 }
