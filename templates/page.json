@@ -62,8 +62,8 @@
         "1647067196c1c99eb9-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
+            "heading": "United States",
+            "icon": "none",
             "row_content": "",
             "page": ""
           }
