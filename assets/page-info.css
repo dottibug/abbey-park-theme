@@ -2,13 +2,11 @@
 	display: grid;
   	grid-template-areas: 
       "sidebar info";
-  position: relative;
 }
 
 .sidebar--navigation-links {
   grid-area: sidebar;
 	width: 100px;
-  position: absolute;
   
 }
 
