@@ -18,6 +18,10 @@
   display: block;
 }
 
-.main--accordion-info p {
+.main--accordion-info {
   grid-area: info;
+}
+
+.main--accordion-info h1 {
+	margin-top: 35px;
 }
