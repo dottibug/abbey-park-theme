@@ -56,6 +56,10 @@ span {
   transition: transform 275ms ease;
 }
 
+a:hover span {
+  transform: translateX(0);
+}
+
 
 .main--accordion-info {
   grid-area: info;
