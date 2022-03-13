@@ -20,6 +20,7 @@ text-decoration: none;
   line-height: 3.25rem;
   color: #999;
   display: inline-block;
+  position: relative;
 }
 
 .sidebar--navigation-links a:hover {
