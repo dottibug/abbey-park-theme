@@ -66,7 +66,7 @@
 	padding-top: 0;
 }
 
-#shopify-section-accordion-menu > div > div > div {
+#shopify-section-accordion-menu .collapsible-content__wrapper {
 	padding-top: 0;
 }
 
