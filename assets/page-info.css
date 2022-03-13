@@ -23,6 +23,7 @@
 
 .sidebar--navigation-links a:hover {
 	text-decoration: underline;
+  background-color: pink;
 }
 
 .main--accordion-info {
