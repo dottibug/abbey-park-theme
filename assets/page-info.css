@@ -62,3 +62,8 @@
 .accordion--menu .container.active .content {
 	height: auto;
 }
+
+.accordion--menu .container.active .label::before {
+	content: '-';
+  	font-size: 1.75rem;
+}
