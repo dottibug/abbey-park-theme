@@ -66,6 +66,10 @@
 	padding-top: 0;
 }
 
+#shopify-section-accordion-menu > div > div > div {
+	padding-top: 0;
+}
+
 .section-accordion-menu-padding {
 	padding-top: 0;	
 }
