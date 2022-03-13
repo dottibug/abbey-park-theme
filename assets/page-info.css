@@ -23,10 +23,30 @@ text-decoration: none;
   position: relative;
 }
 
+.sidebar--navigation-links a {
+	 content: '';
+  position: absolute;
+  width: 0; height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width .2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.sidebar--navigation-links a:hover:after {
+	width: 100%;
+  left: 0;
+  background: #fff;
+}
+
+/*
 .sidebar--navigation-links a:hover {
   background-color: pink;
   transition: 0.5s ease;
 }
+*/
 
 .main--accordion-info {
   grid-area: info;
