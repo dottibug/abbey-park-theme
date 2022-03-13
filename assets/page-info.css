@@ -39,3 +39,8 @@ hr {
 .accordion--menu .container {
 	position: relative;
 }
+
+.accordion--menu .label {
+	position: relative;
+  cursor: pointer;
+}
