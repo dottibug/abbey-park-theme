@@ -127,6 +127,20 @@
       },
       "accordion-menu": {
         "type": "accordion-menu",
+        "blocks": {
+          "16dfcd82-eb77-42d1-8fe9-47f52ee8a8f8": {
+            "type": "collapsible_row",
+            "settings": {
+              "heading": "Collapsible row",
+              "icon": "check_mark",
+              "row_content": "",
+              "page": ""
+            }
+          }
+        },
+        "block_order": [
+          "16dfcd82-eb77-42d1-8fe9-47f52ee8a8f8"
+        ],
         "settings": {
           "caption": "",
           "heading": "Collapsible content",
