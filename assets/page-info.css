@@ -58,3 +58,7 @@
   overflow: hidden;
   transition: 0.5s;
 }
+
+.accordion--menu .container.active .content {
+	height: auto;
+}
