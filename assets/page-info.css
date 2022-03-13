@@ -44,3 +44,9 @@ hr {
 	position: relative;
   cursor: pointer;
 }
+
+.accordion--menu .label::before {
+	content: '+';
+  position: absolute;
+  
+}
