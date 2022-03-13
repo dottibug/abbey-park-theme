@@ -125,6 +125,7 @@ span::before {
 
 .accordion--menu .container.active .content {
 	height: auto;
+  transition: 2s ease-out;
 }
 
 .accordion--menu .container.active .label::before {
