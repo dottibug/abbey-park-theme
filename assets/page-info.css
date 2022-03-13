@@ -9,8 +9,7 @@
 .sidebar--navigation-links {
   grid-area: sidebar;
   overflow-x: hidden;
-  padding-left: 32px;
-    margin-left: 20px;
+    margin-left: 52px;
     margin-top: 0;
 }
 
