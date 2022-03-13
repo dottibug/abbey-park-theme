@@ -57,6 +57,7 @@
   height: 0;
   overflow: hidden;
   transition: 0.5s;
+  font-family: 'Assistant', sans-serif;
 }
 
 .accordion--menu .container.active .content {
