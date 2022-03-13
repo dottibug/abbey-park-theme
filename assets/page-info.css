@@ -23,7 +23,7 @@ text-decoration: none;
 
 .sidebar--navigation-links a:hover {
   background-color: pink;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease;
 }
 
 .main--accordion-info {
