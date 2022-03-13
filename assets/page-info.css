@@ -41,12 +41,12 @@ text-decoration: none;
   transform-origin: bottom left;
 }
 
-/*
+
 .sidebar--navigation-links a:hover {
-  background-color: pink;
-  transition: 0.5s ease;
+  color: #333; 
+  transition: 0.3s ease-out;
 }
-*/
+
 
 .main--accordion-info {
   grid-area: info;
