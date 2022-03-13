@@ -33,7 +33,7 @@ text-decoration: none;
   left: 0;
   background-color: #0087ca;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.3s ease-out;
 }
 
 .sidebar--navigation-links a:hover:after {
