@@ -48,5 +48,5 @@ hr {
 .accordion--menu .label::before {
 	content: '+';
   position: absolute;
-  
+  right: -5px;
 }
