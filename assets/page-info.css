@@ -21,6 +21,10 @@
   color: #999;
 }
 
+.sidebar--navigation-links a:hover {
+	text-decoration: underline;
+}
+
 .main--accordion-info {
   grid-area: info;
 }
