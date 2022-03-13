@@ -43,7 +43,7 @@
 .accordion--menu .label {
 	position: relative;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .accordion--menu .label::before {
