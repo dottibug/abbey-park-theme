@@ -54,6 +54,7 @@
 }
 
 .accordion--menu .content {
+  font-size: 1.5rem;
 	position: relative;
   height: 0;
   overflow: hidden;
