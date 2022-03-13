@@ -71,6 +71,10 @@ span::before {
   text-decoration: underline;
 }
 
+.sidebar--navigation-links a:hover span::before {
+  transform: translateX(0);
+}
+
 
 .main--accordion-info {
   grid-area: info;
