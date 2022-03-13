@@ -58,7 +58,7 @@ span {
   transition: transform 275ms ease;
 }
 
-a:hover span {
+.sidebar--navigation-links a:hover span {
   transform: translateX(0);
 }
 
