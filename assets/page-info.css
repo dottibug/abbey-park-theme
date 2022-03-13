@@ -51,3 +51,10 @@ hr {
   right: 0px;
   font-size: 1.75rem;
 }
+
+.accordion--menu .content {
+	position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
