@@ -28,7 +28,7 @@ text-decoration: none;
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 1px;
+  height: 1.25px;
   bottom: 0;
   left: 0;
   background-color: #0087ca;
