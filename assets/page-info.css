@@ -30,7 +30,7 @@ text-decoration: none;
   display: block;
   margin-top: 5px;
   right: 0;
-  background: #fff;
+  background: #999;
   transition: width .2s ease;
   -webkit-transition: width .2s ease;
 }
@@ -38,7 +38,7 @@ text-decoration: none;
 .sidebar--navigation-links a:hover:after {
 	width: 100%;
   left: 0;
-  background: #fff;
+  background: #999;
 }
 
 /*
