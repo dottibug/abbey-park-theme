@@ -96,12 +96,16 @@
 .ship-table {
 	display: grid;
 	grid-template-areas:
-		"ship-type cost"
-		"subtitle ."
-		"estimate .";
+		"service-cost"
+		"subtitle"
+		"estimate";
 }
 
 .service-cost {
+	display: grid;
+	grid-template-areas:
+		"ship-type cost";
+	grid-area: service-cost;
 	background-color: gray;
 	color: white;
 	padding: 0 10px;
