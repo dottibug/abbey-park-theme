@@ -30,6 +30,9 @@
           Be sure to add 3 to 5 business days to the times below to reflect that 
           processing time. All shipping options include tracking.
         </div>
+        <div class="shipping-tables">
+          
+        </div>
       </div>
       <!-- United States -->
       <div class="container">
@@ -48,6 +51,15 @@
     </div>
   </div>
 </div>
+
+{% style %}
+.shipping-tables {
+	display: grid;
+	grid-template-areas: 
+		"table1 table2";
+}
+
+{% endstyle %}
 
 <script>
   const accordion = document.getElementsByClassName('container');
