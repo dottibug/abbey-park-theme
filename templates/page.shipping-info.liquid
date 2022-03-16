@@ -47,12 +47,14 @@
             </div>
           </div>
           <div class="ship-table table2">
-            <div class="shipping-type">
-              Shipping Service
-            </div>
-            <div class="shipping-cost">
-              $$ Cost
-            </div>
+            <div class="service-cost">
+            	<div class="shipping-type">
+              		Shipping Service
+            	</div>
+            	<div class="shipping-cost">
+              		$$ Cost
+            	</div>
+          </div>
             <div class="shipping-subtitle">
               Estimated Delivery Time
             </div>
@@ -97,9 +99,13 @@
 		"estimate .";
 }
 
+.service-cost {
+	background-color: gray;
+}
+
 .shipping-type {
 	grid-area: ship-type;
-	background-color: gray;
+	
 	color: white;
 	padding: 10px;
 	text-transform: uppercase;
@@ -111,7 +117,7 @@
 .shipping-cost {
 	grid-area: cost;
 	justify-self: end;
-	background-color: gray;
+	
 	color: white;
 	padding: 10px;
 	font-weight: 400;
