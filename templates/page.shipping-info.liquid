@@ -31,9 +31,9 @@
           processing time. All shipping options include tracking.
         </div>
         <div class="shipping-tables">
-          <div class="table1">
+          <div class="ship-table table1">
           </div>
-          <div class="table2">
+          <div class="ship-table table2">
           </div>
         </div>
       </div>
@@ -60,6 +60,14 @@
 	display: grid;
 	grid-template-areas: 
 		"table1 table2";
+}
+
+.ship-table {
+	display: grid;
+	grid-template-areas:
+		"ship-type cost"
+		"subtitle ."
+		"estimate .";
 }
 
 .table1 {
