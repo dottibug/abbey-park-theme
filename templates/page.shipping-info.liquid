@@ -48,6 +48,9 @@
               		100 Business days
             	</div>
           	</div>
+            <div class="shipping-cost">
+              
+            </div>
             
             
           </div>
@@ -106,8 +109,8 @@
 	display: grid;
 	grid-template-areas:
 		"service"
-		"subtitle"
-		"estimate";
+		"subtitle estimate"
+		"cost";
 }
 
 .shipping-type {
@@ -121,22 +124,22 @@
 	letter-spacing: .15rem;
 }
 
-.shipping-cost {
-	grid-area: cost;
-	justify-self: end;
-}
-
 .subtitle-estimate {
 	background-color: #FAFAFA;
 	padding: 12px 10px;
 	border-bottom: 0.5px solid gray;
+	grid-area: subtitle-estimate
+	display: grid;
+	grid-template-areas:
+		"subtitle"
+		"estimate";
 }
 
 .shipping-subtitle {
 	grid-area: subtitle;
 	text-transform: uppercase;
 	font-size: 1rem;
-	letter-spacing: .15rem; 
+	letter-spacing: 0.15rem; 
 }
 
 .shipping-estimate {
@@ -144,6 +147,14 @@
 	font-size: 2rem;
 	font-weight: 400;
 	color: #666666;
+}
+
+.shipping-cost {
+	grid-area: cost;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 0.15rem;
+	background-color: pink;
 }
 
 .table1 {
