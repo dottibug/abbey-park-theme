@@ -52,7 +52,7 @@
             	<!-- Shipping Cost -->
             	<div class="shipping-cost">
                   	<!-- Option 1 -->
-              		<div class="cost-option-1">
+              		<div class="cost-option">
                       <div class="order-total">
                 			Orders under $150
                       </div>
@@ -61,7 +61,7 @@
                       </div>
               		</div>
                   	<!-- Option 2 -->
-              		<div class="cost-option-2">
+              		<div class="cost-option">
                 		<div class="order-total">
                 			Orders over $150
                       	</div>
@@ -168,11 +168,24 @@
 
 .shipping-cost {
 	grid-area: cost;
-	
 	font-size: 1rem;
 	letter-spacing: 0.15rem;
 	background-color: rgba(5,61,56,0.1);
 	padding: 8px 10px;
+}
+
+.cost-option {
+	display: grid;
+	grid-template-areas:
+		"order-total shipping-total";
+}
+
+.order-total {
+	grid-area: order-total;
+}
+
+.shipping-total {
+	grid-area: shipping-total;
 }
 
 .table-1 {
