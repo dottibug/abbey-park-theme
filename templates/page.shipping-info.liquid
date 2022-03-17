@@ -31,16 +31,15 @@
           	Be sure to add 3 to 5 business days to the times below to reflect that 
           	processing time. All shipping options include tracking.
           </div>
+         
+          
           <div class="shipping-tables">
           <div class="ship-table table1">
-            <div class="service-cost">
+            <!--<div class="service-cost">-->
             	<div class="shipping-type">
               		Standard Shipping
             	</div>
-            	<div class="shipping-cost">
-              		$10
-            	</div>
-            </div>
+            <!--</div>-->
             <div class="subtitle-estimate">
             	<div class="shipping-subtitle">
               		Estimated Delivery Time
@@ -69,6 +68,8 @@
           	</div>
           </div>
         </div>   
+        
+        
         </div>
       </div>
       <!-- United States -->
@@ -102,11 +103,12 @@
 .ship-table {
 	display: grid;
 	grid-template-areas:
-		"service-cost"
+		"service"
 		"subtitle"
 		"estimate";
 }
 
+<!--
 .service-cost {
 	display: grid;
 	grid-template-areas:
@@ -121,9 +123,18 @@
 	letter-spacing: .15rem;
 	column-gap: 80px;
 }
+-->
 
 .shipping-type {
-	grid-area: ship-type;
+	grid-area: service;
+	background-color: rgba(5,61,56,0.6);
+	color: white;
+	padding: 4px 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.25rem;
+	letter-spacing: .15rem;
+	column-gap: 80px
 }
 
 .shipping-cost {
