@@ -41,6 +41,7 @@ text-decoration: none;
   content: attr(data-content);
   color: #314544;
   transform: translateX(100%);
+  transform: scale(2);
   transition: transform 275ms ease;
   text-decoration: none;
 }
