@@ -32,6 +32,7 @@ text-decoration: none;
   transition: transform 275ms ease;
 }
 
+/* FOR SLIDING COLOR CHANGE ON HOVER
 .sidebar--navigation-links a:hover span {
   transform: translateX(0);
 }
@@ -47,6 +48,12 @@ text-decoration: none;
 
 .sidebar--navigation-links a:hover span::before {
   transform: translateX(0);
+}
+*/
+
+.sidebar--navigation-links a:hover {
+	transform: scale(1.5);
+  	color: #314544;
 }
 
 .main--accordion-info {
