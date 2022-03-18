@@ -93,7 +93,7 @@ text-decoration: none;
     -webkit-font-smoothing: antialiased;
   }
 
-.accordion--menu .label::before {
+.fa-chevron-down::before {
     /* using style CSS custom property */
     font: var(--fa-font-solid);
     content: "\f078";
