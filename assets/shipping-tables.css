@@ -27,7 +27,7 @@
 	font-weight: 400;
 	font-size: 1.25rem;
 	letter-spacing: .15rem;
-  	height: auto;
+  	height: fit-content;
 }
 
 .delivery-estimate {
