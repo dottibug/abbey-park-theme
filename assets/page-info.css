@@ -34,6 +34,7 @@ text-decoration: none;
 
 .sidebar--navigation-links a:hover span {
   transform: translateX(0);
+  transform: scale(2);
 }
 
 .sidebar::before { 
@@ -41,13 +42,13 @@ text-decoration: none;
   content: attr(data-content);
   color: #314544;
   transform: translateX(100%);
-  transform: scale(2);
   transition: transform 275ms ease;
   text-decoration: none;
 }
 
 .sidebar--navigation-links a:hover span::before {
   transform: translateX(0);
+  transform: scale(2);
 }
 
 .main--accordion-info {
