@@ -102,6 +102,7 @@ text-decoration: none;
 .tps::before {
     /* using style CSS custom property */
     font: var(--fa-font-solid);
+      font-weight: 900;
     content: "\f078";
   }
 
