@@ -47,7 +47,6 @@ text-decoration: none;
 
 .sidebar--navigation-links a:hover span::before {
   transform: translateX(0);
-  transform: scale(2);
 }
 
 .main--accordion-info {
