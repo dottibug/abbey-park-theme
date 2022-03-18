@@ -86,26 +86,6 @@ text-decoration: none;
   color: #666666;
 }
 
-.fa-chevron-down::before {
-    /* removed font- based rules */
-    display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
-
-.fa-chevron-down::before {
-    /* using style CSS custom property */
-    font: var(--fa-font-solid);
-    content: "\f078";
-  }
-
-.tps::before {
-    /* using style CSS custom property */
-    font: var(--fa-font-solid);
-      font-weight: 900;
-    content: "\f078";
-  }
-
 .accordion--menu .content {
   font-size: 1.5rem;
   font-weight: 300;
