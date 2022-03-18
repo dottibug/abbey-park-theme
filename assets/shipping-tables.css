@@ -87,8 +87,3 @@
 .table-2 {
 	grid-area: table2;
 }
-
-.bold-text {
-	font-weight: 600;
-	color: purple;
-}
