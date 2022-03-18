@@ -23,32 +23,6 @@ text-decoration: none;
   position: relative;
 }
 
-/*
-.sidebar--navigation-links a:after {
-	content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1.25px;
-  bottom: 0;
-  left: 0;
-  background-color: #999;
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-
-.sidebar--navigation-links a:hover:after {
-	transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-
-.sidebar--navigation-links a:hover {
-  color: #333; 
-  transition: 0.3s ease-out;
-}
-*/
-
 .sidebar {
   position: absolute;
   top: 0;
@@ -74,7 +48,6 @@ text-decoration: none;
 .sidebar--navigation-links a:hover span::before {
   transform: translateX(0);
 }
-
 
 .main--accordion-info {
   grid-area: info;
