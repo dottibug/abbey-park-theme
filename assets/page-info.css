@@ -49,7 +49,7 @@ text-decoration: none;
 }
 */
 
-span .sidebar {
+.sidebar {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,7 +62,7 @@ span .sidebar {
   transform: translateX(0);
 }
 
-span .sidebar::before { 
+.sidebar::before { 
   display: inline-block;
   content: attr(data-content);
   color: red;
