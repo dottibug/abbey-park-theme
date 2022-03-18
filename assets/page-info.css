@@ -53,6 +53,7 @@ text-decoration: none;
 
 .sidebar--navigation-links a:hover {
   	color: #333;
+  	background-color: #cc9a9b;
 }
 
 .main--accordion-info {
