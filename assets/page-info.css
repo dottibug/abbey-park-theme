@@ -52,7 +52,7 @@ text-decoration: none;
 */
 
 .sidebar--navigation-links a:hover {
-	
+	font-weight: 600;
   	color: #314544;
 }
 
