@@ -52,7 +52,7 @@ text-decoration: none;
 */
 
 .sidebar--navigation-links a:hover {
-	transform: scale(1.25);
+	
   	color: #314544;
 }
 
