@@ -53,10 +53,11 @@ text-decoration: none;
 */
 
 .sidebar--navigation-links a:hover {
-  	color: #666;
-  	background-color: #cc9a9b;
+  	color: #333;
+  	transform: scale(1.05);
+  	/*background-color: #cc9a9b;
   	border-radius: 2px;
-  	padding: 0 5px;
+  	padding: 0 5px;*/
 }
 
 .main--accordion-info {
