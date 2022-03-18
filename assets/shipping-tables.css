@@ -21,7 +21,7 @@
 
 .shipping-type {
 	grid-area: service;
-	background-color: rgba(5,61,56,0.6);
+	background-color: rgba(49, 69, 68,0.6);
 	color: white;
 	padding: 4px 10px;
 	text-transform: uppercase;
