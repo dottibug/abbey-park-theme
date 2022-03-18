@@ -111,7 +111,7 @@ text-decoration: none;
 
 .accordion--menu .container.active .content {
 	height: auto;
-  	
+  	transition: height 2s ease-out;
 }
 
 .accordion--menu .container.active .label::before {
