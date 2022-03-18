@@ -9,7 +9,7 @@
 .sidebar--navigation-links {
   grid-area: sidebar;
   overflow-x: hidden;
-    margin-left: 52px;
+    margin-left: 47px;
     margin-top: 0;
   width: auto;
 }
@@ -21,6 +21,7 @@ text-decoration: none;
   color: #999;
   display: inline-block;
   position: relative;
+  padding-left: 5px;
 }
 
 .sidebar {
