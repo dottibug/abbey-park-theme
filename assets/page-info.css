@@ -99,6 +99,12 @@ text-decoration: none;
     content: "\f078";
   }
 
+.tps::before {
+    /* using style CSS custom property */
+    font: var(--fa-font-solid);
+    content: "\f078";
+  }
+
 .accordion--menu .content {
   font-size: 1.5rem;
   font-weight: 300;
