@@ -39,7 +39,7 @@ text-decoration: none;
 .sidebar::before { 
   display: inline-block;
   content: attr(data-content);
-  color: #C26B76;
+  color: #CC9A9B;
   transform: translateX(100%);
   transition: transform 275ms ease;
   text-decoration: none;
