@@ -86,7 +86,7 @@ text-decoration: none;
   color: #666666;
 }
 
-.icon::before {
+.fa-chevron-down::before {
     /* removed font- based rules */
     display: inline-block;
     text-rendering: auto;
