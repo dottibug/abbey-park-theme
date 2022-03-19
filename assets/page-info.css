@@ -128,6 +128,7 @@ text-decoration: none;
 	display: grid;
   	grid-template-areas:
       "heading icon";
+  	
 }
 .accordion-heading {
 	cursor: pointer;
@@ -136,7 +137,6 @@ text-decoration: none;
   	border: none;
   	font-family: lato;
   	background-color: transparent;
-  	width: 100%;
   	grid-area: heading;
 }
 
