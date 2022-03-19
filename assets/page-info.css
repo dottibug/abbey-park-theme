@@ -121,9 +121,7 @@ text-decoration: none;
   	color: #666666;
   	font-weight: 300;
   transform: rotate(90deg);
-  right: 1px;
-
-  
+  right: 0px;
 }
 
 .bold-text {
