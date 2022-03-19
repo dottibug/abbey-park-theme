@@ -235,9 +235,10 @@
   for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', function() {
     	this.classList.toggle('active');
+      	let content = this.getElementsByClassName("content");
+      
+      	console.log(content);
    
-      console.log(this.getElementsByClassName("content"));
-      console.log("Max Height: " + this.getElementsByClassName("content").scrollHeight);
       
     });
   };
