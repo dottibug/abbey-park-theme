@@ -97,6 +97,7 @@ text-decoration: none;
   font-weight: 300;
   color: #666666;
   border-top: 1px solid #666666;
+  top: 50%;
 }
 
 .accordion--menu .content {
