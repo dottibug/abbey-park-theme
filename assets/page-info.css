@@ -129,13 +129,12 @@ text-decoration: none;
   	grid-template-areas:
       "heading icon";
   	font-family: lato;
+  	font-size: 1.5rem;
+  	font-weight: 400;
 }
 .accordion-heading {
 	cursor: pointer;
-  	font-size: 1.5rem;
-  	font-weight: 400;
   	border: none;
-  	font-family: lato;
   	background-color: transparent;
   	grid-area: heading;
 }
