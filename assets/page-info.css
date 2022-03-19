@@ -133,7 +133,7 @@ text-decoration: none;
   	font-weight: 400;
   	width: 100%;
 }
-.accordion-heading h2 {
+.accordion-heading {
 	cursor: pointer;
   	border: none;
   	background-color: transparent;
