@@ -105,12 +105,12 @@ text-decoration: none;
   max-height: 0;
   overflow: hidden;
   margin-bottom: 15px;
-  transition: max-height 3s ease-out;
+  transition: max-height 1s ease-out;
 }
 
 .accordion--menu .container.active .content {
 	max-height: 1200px;
-  	transition: max-height 3s ease-out;
+  	transition: max-height 1s ease-out;
 }
 
 .accordion--menu .container.active .label::before {
