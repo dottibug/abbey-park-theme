@@ -69,7 +69,7 @@ text-decoration: none;
 }
 
 .accordion--menu hr {
-	margin-top: 8px;
+	margin-top: 0px;
   	margin-bottom: 8px;
 }
 
@@ -91,7 +91,7 @@ text-decoration: none;
 
 .accordion--menu .label:hover {
 	color: #333;
-  	transform: scale(1.005);
+  	
 }
 
 .accordion--menu .label::before {
