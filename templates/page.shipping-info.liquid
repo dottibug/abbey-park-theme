@@ -235,8 +235,9 @@
   for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', function() {
     	this.classList.toggle('active');
-      let content = accordion[i].querySelector('div:nth-child(2)');
-      console.log(content);
+      let content = this.querySelector('div:nth-child(2)');
+      console.log(content.style);
+      
     });
   };
 </script>
