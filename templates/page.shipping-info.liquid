@@ -236,6 +236,7 @@
     accordion[i].addEventListener('click', function() {
     	this.classList.toggle('active');
       let content = this.querySelector('div:nth-child(2)');
+      content.style.maxHeight = content.scrollHeight + "px";
       console.log(content.scrollHeight);
       
     });
