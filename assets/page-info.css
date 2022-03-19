@@ -91,7 +91,7 @@ text-decoration: none;
 
 .accordion--menu .label:hover {
 	color: #333;
-  	transform: scale(1.08);
+  	transform: scale(1.02);
 }
 
 .accordion--menu .label::before {
