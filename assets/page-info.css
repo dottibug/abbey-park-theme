@@ -131,6 +131,7 @@ text-decoration: none;
   	font-family: lato;
   	font-size: 1.5rem;
   	font-weight: 400;
+  	width: 100%;
 }
 .accordion-heading {
 	cursor: pointer;
