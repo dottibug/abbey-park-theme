@@ -96,7 +96,7 @@ text-decoration: none;
   font-size: 2.25rem;
   font-weight: 300;
   color: #666666;
-  transition: max-height 5s ease-out;
+  transition: content 1s ease-out;
 }
 
 .accordion--menu .content {
@@ -119,7 +119,7 @@ text-decoration: none;
   	font-size: 2.5rem;
   	color: #666666;
   	font-weight: 300;
-  transition: max-height 0.8s ease-in;
+  transition: content 0.8s ease-in;
 }
 
 .bold-text {
