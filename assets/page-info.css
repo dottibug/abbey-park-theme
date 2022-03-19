@@ -102,13 +102,13 @@ text-decoration: none;
   font-size: 1.5rem;
   font-weight: 300;
 	position: relative;
-  max-height: 0;
+  height: 0;
   overflow: hidden;
   margin-bottom: 15px;
 }
 
 .accordion--menu .container.active .content {
-	max-height: auto;
+	height: auto;
 }
 
 .accordion--menu .container.active .label::before {
