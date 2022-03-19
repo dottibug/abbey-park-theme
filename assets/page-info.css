@@ -122,7 +122,10 @@ text-decoration: none;
   	font-weight: 300;
   border-top: 1px solid #666666;
   transform: rotate(90deg);
-  transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out
+    left: 1em;
+  right: 1em;
+  top: 50%;
   
 }
 
