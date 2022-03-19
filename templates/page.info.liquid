@@ -3,6 +3,8 @@
 {% section 'image-banner' %}
 
 <div class="wrapper--sidebar-info">
+  
+  <!-- SIDEBAR NAVIGATION -->
   <div class="sidebar--navigation-links">
     <a href="https://abbeypark.shop/pages/faqs"><span data-content="FAQs" aria-hidden="true"></span>FAQs</a> <br>
     <a href="https://abbeypark.shop/pages/shipping-delivery"><span data-content="Shipping" aria-hidden="true"></span>Shipping</a> <br>
@@ -15,41 +17,26 @@
     <a href="https://abbeypark.shop/pages/wholesale"><span data-content="Wholesale" aria-hidden="true"></span>Wholesale</a> <br>
     <a href="https://abbeypark.shop/pages/contact"><span data-content="Contact Us" aria-hidden="true"></span>Contact Us</a> <br>
   </div>
+  
+  <!-- ACCORDION -->
   <div class="main--accordion-info">
     <div class="heading--info-title">
     	<h1 class="heading--info">Info Page Heading</h1>
     </div>
     <div class="accordion--menu">
-    
-      <!-- copy paste below for each accordion item --> 
+      <!-- COPY/PASTE FOR EACH ACCORDION ITEM --> 
       <div class="container">
         <div class="label">Question or topic text</div>
         <hr>
         <div class="content">Information, charts, photos, text</div>
       </div>
-      <!-- copy paste above for each accordion item -->
-      <div class="container">
-        <div class="label">Question or topic text</div>
-        <hr>
-        <div class="content">Information, charts, photos, text</div>
-      </div>
+      <!-- END COPY/PASTE --> 
    </div>
   </div>
   
-  <!-- Accessible Accordion with Slide Up/Down -->
-  <h2>
-  	<button class="accordion">
-      Heading
-      <i class="fa-solid fa-angle-up" aria-hidden="true"></i>
-    </button>
-  </h2>
-  <div class="panel">
-    Panel Content
-  </div>
-  
-  
 </div>
 
+<!-- SHOW ACCORDION CONTENT ON CLICK -->
 <script>
   const accordion = document.getElementsByClassName('container');
   
