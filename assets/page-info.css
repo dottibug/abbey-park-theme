@@ -124,7 +124,7 @@ text-decoration: none;
 }
 
 /* Accordion with Slide Up/Down */
-.accordion {
+.accordion-heading {
 	cursor: pointer;
   	font-size: 1.5rem;
   	font-weight: 400;
