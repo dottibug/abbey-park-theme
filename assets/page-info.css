@@ -124,6 +124,11 @@ text-decoration: none;
 }
 
 /* Accordion with Slide Up/Down */
+.accordion-container {
+	display: grid;
+  	grid-template-areas:
+      "heading icon";
+}
 .accordion-heading {
 	cursor: pointer;
   	font-size: 1.5rem;
@@ -132,4 +137,9 @@ text-decoration: none;
   	font-family: lato;
   	background-color: transparent;
   	width: 100%;
+  	grid-area: heading;
+}
+
+.accordion-icon {
+	grid-area: icon;
 }
