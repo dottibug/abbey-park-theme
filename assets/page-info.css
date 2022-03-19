@@ -89,6 +89,11 @@ text-decoration: none;
   font-weight: 400;
 }
 
+.accordion--menu .label:hover {
+	color: #333;
+  	transform: scale(1.08);
+}
+
 .accordion--menu .label::before {
 	content: '+';
   position: absolute;
