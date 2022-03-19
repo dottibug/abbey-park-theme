@@ -98,7 +98,7 @@ text-decoration: none;
   color: #666666;
 }
 
-.content {
+.accordion--menu .content {
   font-size: 1.5rem;
   font-weight: 300;
 	position: relative;
@@ -109,7 +109,7 @@ text-decoration: none;
 }
 
 .accordion--menu .container.active .content {
-	height: auto;
+	max-height: auto;
 }
 
 .accordion--menu .container.active .label::before {
