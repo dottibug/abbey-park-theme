@@ -89,7 +89,7 @@ text-decoration: none;
   font-weight: 400;
 }
 
-.accordion--menu .label::before {
+.accordion--menu .accordion-icon::before {
 	content: '';
   position: absolute;
   right: 0px;
