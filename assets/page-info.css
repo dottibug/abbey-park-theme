@@ -126,6 +126,7 @@ text-decoration: none;
     left: 1em;
   right: 1em;
   top: 50%;
+  position: absolute;
   
 }
 
