@@ -235,7 +235,7 @@
   for (let i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener('click', function() {
     	this.classList.toggle('active');
-      let content = document.querySelector("#MainContent > div > div.main--accordion-info > div.accordion--menu > div.container.active > div.content > div.shipping-info-text");
+      let content = document.querySelector("#MainContent > div > div.main--accordion-info > div.accordion--menu > div.container.active > div.content");
    
       console.log(content.maxHeight);
       
@@ -245,6 +245,7 @@
   
   
   <!--
+document.querySelector("#MainContent > div > div.main--accordion-info > div.accordion--menu > div.container.active > div.content")
 
 document.querySelector("#MainContent > div > div.main--accordion-info > div.accordion--menu > div.container.active > div.content > div.shipping-info-text")
 
