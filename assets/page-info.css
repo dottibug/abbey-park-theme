@@ -105,7 +105,7 @@ text-decoration: none;
   max-height: 0;
   overflow: hidden;
   margin-bottom: 15px;
-  transition: max-height 0.4s ease-in;
+  transition: max-height 0.4s ease;
 }
 
 .accordion--menu .container.active .content {
