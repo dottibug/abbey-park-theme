@@ -237,7 +237,7 @@
     	this.classList.toggle('active');
       let content = document.querySelector("#MainContent > div > div.main--accordion-info > div.accordion--menu > div.container.active > div.content");
    
-      console.log(content.maxHeight);
+      console.log(this.parentNode);
       
     });
   };
@@ -247,7 +247,7 @@
   <!--
 document.querySelector("#MainContent > div > div.main--accordion-info > div.accordion--menu > div.container.active > div.content")
 
-document.querySelector("#MainContent > div > div.main--accordion-info > div.accordion--menu > div.container.active > div.content > div.shipping-info-text")
+#MainContent > div > div.main--accordion-info > div.accordion--menu > div.container.active > div.content
 
 let value = document.getElementById("myP").style.borderTop;
 content.style.maxHeight = content.scrollHeight + "px";
