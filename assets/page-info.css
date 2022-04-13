@@ -169,11 +169,11 @@ text-decoration: none;
 }
 
 .button--link a {
-	color: #CC9A9B;
+	color: #314544;
   	font-weight: 600;
   	text-decoration: none;
   	text-transform: uppercase;
   	box-sizing: border-box;
-  	border: 2px solid #CC9A9B;
+  	border: 2px solid #314544;
   	padding: 8px 12px;
 }
