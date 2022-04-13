@@ -127,7 +127,7 @@ text-decoration: none;
 }
 
 .accordion--menu .container.active .label {
-	background-color: pink;
+	background-color: rgba(47, 79, 79, 0.15);
 }
 
 .accordion--menu .container.active .content {
