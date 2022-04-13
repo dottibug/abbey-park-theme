@@ -177,7 +177,7 @@ text-decoration: none;
   	text-transform: uppercase;
   	box-sizing: border-box;
   	/*border: 1px solid #314544;*/
-  	border: 1px solid #2f4f4f80;
+  	border: 1px solid rgba(47, 79, 79, 0.8);
   	padding: 8px 12px;
 }
 
