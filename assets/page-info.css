@@ -165,4 +165,6 @@ text-decoration: none;
 
 .button--link a {
 	color: red;
+  	text-decoration: none;
+  	text-transform: uppercase;
 }
