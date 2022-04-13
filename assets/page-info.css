@@ -170,7 +170,7 @@ text-decoration: none;
 
 .button--link a {
 	/*color: #314544;*/
-  	color: #2f4f4f80;
+  	color: rgba(47, 79, 79, 0.8);
   	font-weight: 600;
   	font-size: 1.2rem;
   	text-decoration: none;
@@ -184,6 +184,5 @@ text-decoration: none;
 .button--link a:hover {
 	/*background-color: #314544;*/
   	background-color: #2f4f4f80;
-  	border: 1px solid #2f4f4f80;
   	color: #fff;
 }
