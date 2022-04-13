@@ -2076,7 +2076,8 @@ input[type='checkbox'] {
 }
 
 #shopify-section-announcement-bar > div {
-  background-color: #B59A9B;
+  /*background-color: #B59A9B;*/
+  background-color: #CC9A9B;
 }
 
 .announcement-bar__link {
