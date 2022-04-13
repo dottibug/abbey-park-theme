@@ -99,7 +99,7 @@ text-decoration: none;
 }
 
 .accordion--menu .label p {
-  	padding-bottom: 4px;
+  	margin-bottom: 0px;
 }
 
 .accordion--menu .label:hover {
