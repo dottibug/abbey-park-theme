@@ -170,10 +170,10 @@ text-decoration: none;
 
 .button--link a {
 	color: #314544;
-  	font-weight: 600;
+  	font-weight: 500;
   	text-decoration: none;
   	text-transform: uppercase;
   	box-sizing: border-box;
-  	border: 2px solid #314544;
+  	border: 1px solid #314544;
   	padding: 8px 12px;
 }
