@@ -169,17 +169,20 @@ text-decoration: none;
 }
 
 .button--link a {
-	color: #314544;
+	/*color: #314544;*/
+  	color: #2f4f4f80;
   	font-weight: 600;
   	font-size: 1.2rem;
   	text-decoration: none;
   	text-transform: uppercase;
   	box-sizing: border-box;
-  	border: 1px solid #314544;
+  	/*border: 1px solid #314544;*/
+  	border: 1px solid #2f4f4f80;
   	padding: 8px 12px;
 }
 
 .button--link a:hover {
-	background-color: #314544;
+	/*background-color: #314544;*/
+  	background-color: #2f4f4f80;
   	color: #fff;
 }
