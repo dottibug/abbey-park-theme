@@ -129,6 +129,7 @@ text-decoration: none;
 .accordion--menu .container.active .content {
 	max-height: 1200px;
   	transition: max-height 0.8s ease-in;
+  	background-color: pink;
 }
 
 .accordion--menu .container.active .label::before {
