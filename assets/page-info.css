@@ -163,6 +163,10 @@ text-decoration: none;
 	color: #C26B76;
 }
 
+.button--link {
+	margin-bottom: 10px;
+}
+
 .button--link a {
 	color: red;
   	text-decoration: none;
@@ -170,5 +174,4 @@ text-decoration: none;
   	box-sizing: border-box;
   	border: 1px solid red;
   	padding: 8px;
-  	margin-bottom: 10px;
 }
