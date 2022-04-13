@@ -163,7 +163,7 @@ text-decoration: none;
 	color: #C26B76;
 }
 
-.button--link {
+.button--link a {
 	color: red;
   	text-decoration: none;
   	text-transform: uppercase;
