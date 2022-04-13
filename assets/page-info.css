@@ -169,14 +169,12 @@ text-decoration: none;
 }
 
 .button--link a {
-	/*color: #314544;*/
   	color: rgba(47, 79, 79, 0.8);
   	font-weight: 600;
   	font-size: 1.2rem;
   	text-decoration: none;
   	text-transform: uppercase;
   	box-sizing: border-box;
-  	/*border: 1px solid #314544;*/
 	background-color: transparent;
   	border: 1px solid;
   	border-color: rgba(47, 79, 79, 0.8);
@@ -184,7 +182,6 @@ text-decoration: none;
 }
 
 .button--link a:hover {
-	/*background-color: #314544;*/
   	background-color: rgba(47, 79, 79, 0.8);
   	border-color: transparent;
   	color: #fff;
