@@ -184,5 +184,6 @@ text-decoration: none;
 .button--link a:hover {
 	/*background-color: #314544;*/
   	background-color: #2f4f4f80;
+  	border: 1px solid #2f4f4f80;
   	color: #fff;
 }
