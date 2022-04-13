@@ -185,6 +185,6 @@ text-decoration: none;
 .button--link a:hover {
 	/*background-color: #314544;*/
   	background-color: rgba(47, 79, 79, 0.8);
-  	background-color: pink;
+  	border-color: rgba(47, 79, 79, 0.8);
   	color: #fff;
 }
