@@ -157,7 +157,8 @@ text-decoration: none;
 .content a {
 	font-weight: 600;
   	color: #CC9A9B;
-  	text-decoration: underline overline;
+  	text-decoration-line: underline;
+  text-decoration-style: wavy;
 }
 
 .content a:hover {
