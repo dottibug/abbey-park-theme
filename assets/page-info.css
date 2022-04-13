@@ -178,3 +178,8 @@ text-decoration: none;
   	border: 1px solid #314544;
   	padding: 8px 12px;
 }
+
+.button--link a:hover {
+	background-color: #314544;
+  	color: #fff;
+}
