@@ -164,7 +164,7 @@ text-decoration: none;
 }
 
 .button--link {
-	margin-bottom: auto 10px;
+	margin-bottom: 10px auto;
 }
 
 .button--link a {
