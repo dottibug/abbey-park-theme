@@ -436,7 +436,10 @@ END COPY/PASTE -->
   const img = document.getElementById("necklace-chart");
   const chartModalImage = document.getElementyById("necklace-chart-modal");
   
-  
+  img.onclick = function() {
+  	chartModalContainer.style.display = "block";
+    chartModalImage.src = this.src;
+  }
   
   
   
