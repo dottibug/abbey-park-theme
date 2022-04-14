@@ -188,6 +188,7 @@ text-decoration: none;
 }
 
 .button--ring-size p:hover, :active {
+  	cursor: pointer;
 	background-color: rgba(47, 79, 79, 0.8);
   	border-color: transparent;
   	color: #fff;
