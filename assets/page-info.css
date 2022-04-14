@@ -168,7 +168,7 @@ text-decoration: none;
   	text-align: left;
 }
 
-.button--link a, .button--link p {
+.button--link a {
   	color: rgba(47, 79, 79, 0.8);
   	font-weight: 600;
   	font-size: 1.2rem;
@@ -185,4 +185,17 @@ text-decoration: none;
   	background-color: rgba(47, 79, 79, 0.8);
   	border-color: transparent;
   	color: #fff;
+}
+
+.button--link p {
+	color: rgba(47, 79, 79, 0.8);
+  	font-weight: 600;
+  	font-size: 1.2rem;
+  	text-decoration: none;
+  	text-transform: uppercase;
+  	box-sizing: border-box;
+	background-color: transparent;
+  	border: 1px solid;
+  	border-color: rgba(47, 79, 79, 0.8);
+  	padding: 8px 12px;
 }
