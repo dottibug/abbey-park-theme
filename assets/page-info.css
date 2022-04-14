@@ -163,7 +163,7 @@ text-decoration: none;
 	color: #C26B76;
 }
 
-.button--link {
+.button--link a {
   	margin: 24px auto 20px;
   	text-align: left;
 }
