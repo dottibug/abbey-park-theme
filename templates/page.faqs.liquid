@@ -413,12 +413,11 @@
 
 <!-- SHOW ACCORDION CONTENT ON CLICK -->
 <script>
-  const accordionLabel = document.getElementsByClassName('label');
-  const accordionContent = document.getElementsByClassName('container');
+  const accordion = document.getElementsByClassName('container');
   
-  for (let i = 0; i < accordionLabel.length; i++) {
-    accordionLabel[i].addEventListener('click', function() {
-    	accordionContent.classList.toggle('active');
+  for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function() {
+    	this.classList.toggle('active');
     });
   };
 </script>
