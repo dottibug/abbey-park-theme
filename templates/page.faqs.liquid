@@ -246,15 +246,15 @@
           </p>
           
           <div class="ring-size-container">
-         	<div class="button--link">
+         	<div class="button--link ring-method">
             	<p>Measure From A Ring</p>
           	</div>
           
-          	<div class="button--link">
+          	<div class="button--link paper-method">
             	<p>Measure With Paper</p>
           	</div>
           
-          	<div class="button--link">
+          	<div class="button--link sizer-method">
             	<p>Order A Ring Sizer</p>
           	</div>
           </div>
@@ -445,6 +445,18 @@ END COPY/PASTE -->
 	display: grid;
 	grid-template-area:
 		"ring paper sizer";
+}
+
+.ring-method {
+	grid-area: ring;
+}
+
+.paper-method {
+	grid-area: paper;
+}
+
+.sizer-method {
+	grid-area: sizer;
 }
 
 {% endstyle %}
