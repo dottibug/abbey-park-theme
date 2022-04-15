@@ -420,30 +420,38 @@
   
 </div>
 
-<!-- SHOW RING SIZING INFO ON BUTTON CLICK -->
 <script>
-  const button = document.getElementsByClassName('button--ring-size');
+  /* SHOW ACCORDION CONTENT ON CLICK */
   
-  for (let i = 0; i <button.length; i++) {
-    button[i].addEventListener('click', function() {
+  function accordionClick() {
+  
+    const accordion = document.getElementsByClassName('container');
+    
+    for (let i = 0; i < accordion.length; i++) {
+    	accordion[i].addEventListener('click', function() {
     	this.classList.toggle('active');
-    });
+    	});
+    };
   };
   
- /* IF button clicked, deactivate click eventlistener on container; otherwise keep event listener to close container content */
+  /* SHOW RING SIZE INFO ON BUTTON CLICK */
+  /* IF button clicked, deactivate click eventlistener on container; otherwise keep event listener to close container content */
  /* IF button clicked, show related button content */
   
-</script>
-
-<!-- SHOW ACCORDION CONTENT ON CLICK -->
-<script>
-  const accordion = document.getElementsByClassName('container');
+  /*
+  function ringSizing() {
+  	
+    const sizingChoice = document.getElementsByClassName('button--ring-size');
+    
+    for (let i = 0; i < sizingChoice.length; i++) {
+      sizingChoice[i].addEventListener('click', function() {
+      	
+      }
+    }
   
-  for (let i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener('click', function() {
-    	this.classList.toggle('active');
-    });
-  };
+  }
+  */
+  
 </script>
 
 <!-- COPY/PASTE FOR EACH ACCORDION ITEM
