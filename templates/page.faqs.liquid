@@ -430,12 +430,19 @@
     
     for (let i = 0; i < accordion.length; i++) {
     	accordion[i].addEventListener('click', function() {
-    	this.classList.toggle('active');
+    		this.classList.toggle('active');
     	});
     };
   };
   
   accordionClick();
+  
+  for (let i = 0; i < buttonRingSize.length; i++) {
+    buttonRingSize[i].addEventListener('click', function() {
+    	this.classList.toggle('active'); /* FOR NOW; change to show appropriate content after accordion isn't closing when button clicked */
+    }
+  
+  }
   
   if ()
   
@@ -496,6 +503,10 @@ END COPY/PASTE -->
 
 .sizer-method {
 	grid-area: sizer;
+}
+
+.button--ring-size .active {
+	color: red;
 }
 
 {% endstyle %}
