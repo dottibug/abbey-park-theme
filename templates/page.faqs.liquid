@@ -423,9 +423,9 @@
 <script>
   /* SHOW ACCORDION CONTENT ON CLICK */
   
-  function accordionClick() {
+  const accordion = document.getElementsByClassName('container');
   
-    const accordion = document.getElementsByClassName('container');
+  function accordionClick() {
     
     for (let i = 0; i < accordion.length; i++) {
     	accordion[i].addEventListener('click', function() {
@@ -435,6 +435,8 @@
   };
   
   accordionClick();
+  
+  
   
   /* SHOW RING SIZE INFO ON BUTTON CLICK */
   /* IF button clicked, deactivate click eventlistener on container; otherwise keep event listener to close container content */
