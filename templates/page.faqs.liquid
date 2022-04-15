@@ -437,14 +437,19 @@
   
   accordionClick();
   
+  /* event listener for ring size button */
+  
   for (let i = 0; i < buttonRingSize.length; i++) {
     buttonRingSize[i].addEventListener('click', function() {
     	this.classList.toggle('active'); /* FOR NOW; change to show appropriate content after accordion isn't closing when button clicked */
+    });
+    
+    /* if button ring size has class active, remove event listener for accordion and show size guide info */
+    if (buttonRingSize[i].classList.contains('active')) {
+    	accordion.removeEventListener('click', accordionClick);
     }
+  };
   
-  }
-  
-  if ()
   
   /* SHOW RING SIZE INFO ON BUTTON CLICK */
   /* IF button clicked, deactivate click eventlistener on container; otherwise keep event listener to close container content */
