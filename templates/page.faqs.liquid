@@ -433,11 +433,16 @@
   /* SHOW RING SIZING INFO ON BUTTON CLICK */
   const ringSizeButtons = document.getElementsByClassName('button--ring-size');
   const ringSizeButtonsArray = Array.from(document.getElementsByClassName('button--ring-size'));
+  
+  const ringSizeInfo = document.getElementsByClassName('size--info');
+  const ringSizeInfoArray = Array.from(document.getElementsByBlassName('size--info'));
+  
   /* add event listener to each button and add 'clicked' to classlist of clicked button */
   for (let i = 0; i < ringSizeButtons.length; i++) {
     ringSizeButtons[i].addEventListener('click', function() {
       	/* remove 'clicked' from all buttons */
       	ringSizeButtonsArray.forEach((button) => {button.classList.remove('clicked')}); 
+      	
       	/* add 'clicked' to the current button */
     	this.classList.add('clicked');
       if(this.classList.contains('ring-method')) {
