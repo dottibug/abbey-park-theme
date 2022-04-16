@@ -492,4 +492,15 @@ END COPY/PASTE -->
   	color: #fff;
 }
 
+.size--info {
+	 max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.size--info.clicked {
+	max-height: 1200px;
+  	transition: max-height 0.8s ease-in;
+}
+
 {% endstyle %}
