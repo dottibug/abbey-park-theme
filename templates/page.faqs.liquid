@@ -435,6 +435,7 @@
   /* add event listener to each button and add 'clicked' to classlist of clicked button */
   for (let i = 0; i < ringSizeButtons.length; i++) {
     ringSizeButtons[i].addEventListener('click', function() {
+      	ringSizeButtons.classList.remove('clicked');
     	this.classList.add('clicked');
     });
   };
