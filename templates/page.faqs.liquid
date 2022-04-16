@@ -421,54 +421,13 @@
 </div>
 
 <script>
-  /* SHOW ACCORDION CONTENT ON CLICK */
+  const accordionLabel = document.getElementsByClassName('label');
   
-  const accordion = document.getElementsByClassName('container');
-  const buttonRingSize = document.getElementsByClassName('button--ring-size');
-  
-  function accordionClick() {
-    
-    for (let i = 0; i < accordion.length; i++) {
-    	accordion[i].addEventListener('click', function() {
-    		this.classList.toggle('active');
-    	});
-    };
-  };
-  
-  accordionClick();
-  
-  /* event listener for ring size button */
-  
-  for (let i = 0; i < buttonRingSize.length; i++) {
-    buttonRingSize[i].addEventListener('click', function() {
-    	this.classList.toggle('active'); /* FOR NOW; change to show appropriate content after accordion isn't closing when button clicked */
+  for (let i = 0; i < accordionLabel.length; i++) {
+    accordionLabel[i].addEventListener('click', function() {
+    	this.parentNode.classList.toggle('active');
     });
-    
-    /* if button ring size has class active, remove event listener for accordion and show size guide info */
-    if (buttonRingSize[i].classList.contains('active')) {
-    	accordion.removeEventListener('click', accordionClick);
-    }
   };
-  
-  
-  /* SHOW RING SIZE INFO ON BUTTON CLICK */
-  /* IF button clicked, deactivate click eventlistener on container; otherwise keep event listener to close container content */
- /* IF button clicked, show related button content */
-  
-  /*
-  function ringSizing() {
-  	
-    const sizingChoice = document.getElementsByClassName('button--ring-size');
-    
-    for (let i = 0; i < sizingChoice.length; i++) {
-      sizingChoice[i].addEventListener('click', function() {
-      	
-      }
-    }
-  
-  }
-  */
-  
 </script>
 
 <!-- COPY/PASTE FOR EACH ACCORDION ITEM
