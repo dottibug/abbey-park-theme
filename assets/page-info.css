@@ -87,6 +87,11 @@ text-decoration: none;
   	padding-right: 100px;
 }
 
+.accordion--menu p {
+	font-size: 1.45rem;
+  	font-weight: 400;
+}
+
 .accordion--menu .container {
 	position: relative;
 }
