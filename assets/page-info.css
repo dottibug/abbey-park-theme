@@ -187,3 +187,8 @@ text-decoration: none;
   	border-color: transparent;
   	color: #fff;
 }
+
+/* Remove background-color from label p elements */
+.label p:active {
+	background-color: none;
+}
