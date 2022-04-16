@@ -51,6 +51,7 @@
           Information, charts, photos, text. Information, charts, photos, text.
           Information, charts, photos, text. Information, charts, photos, text.
           Information, charts, photos, text. Information, charts, photos, text.
+          <p class="button--test">Click this to turn red</p>
         </div>
       </div>
    </div>
@@ -70,6 +71,22 @@
     });
   };
 </script>
+
+{% style %}
+.button--test {
+	box-sizing: border-box;
+	border: 1px solid black;
+}
+
+.button--test:hover {
+	cursor: pointer;
+}
+
+.button--test:focus {
+	background-color: red;
+}
+
+{% endstyle %}
 
 
 <!--
