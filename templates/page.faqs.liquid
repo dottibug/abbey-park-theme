@@ -267,7 +267,7 @@
               </p>
           </div>
           <!-- PAPER METHOD INFO -->
-          <div class="size--info paper-method-info">
+          <div class="size--info" id="paper-method-info">
               <p>
                 Wrap a strip of paper snugly around your finger. Mark the overlap with a pen, then 
                 lay the paper flat against a ruler to measure (mm). Use the chart below to find your 
@@ -275,7 +275,7 @@
               </p>
           </div>
           <!-- SIZER METHOD INFO -->
-          <div class="size--info sizer-method-info">
+          <div class="size--info" id="sizer-method-info">
               <p>add ring sizer to cart product lightbox</p>
           </div>
         </div>
@@ -444,10 +444,10 @@
         document.getElementById('ring-method-info').classList.add('clicked');
       } 
       if (this.classList.contains('paper-method')) {
-      	document.querySelector('paper-method-info').classList.add('clicked');
+      	document.getElementById('paper-method-info').classList.add('clicked');
       }
       if (this.classList.contains('sizer-method')) {
-      	document.querySelector('sizer-method-info').classList.add('clicked');
+      	document.getElementById('sizer-method-info').classList.add('clicked');
       };
     });
   };
