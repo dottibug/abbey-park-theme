@@ -432,13 +432,13 @@
   
   /* SHOW RING SIZING INFO ON BUTTON CLICK */
   const ringSizeButtons = document.getElementsByClassName('button--ring-size');
-  
+  /* add event listener to each button and add 'clicked' to classlist of clicked button */
   for (let i = 0; i < ringSizeButtons.length; i++) {
     ringSizeButtons[i].addEventListener('click', function() {
     	this.classList.add('clicked');
-    }
-  }
-  
+    });
+  };
+  /* if button classlist contains 'clicked' ... */
   
 </script>
 
