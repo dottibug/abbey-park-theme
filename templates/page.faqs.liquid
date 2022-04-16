@@ -433,7 +433,11 @@
   /* SHOW RING SIZING INFO ON BUTTON CLICK */
   const ringSizeButtons = document.getElementsByClassName('button--ring-size');
   
-  
+  for (let i = 0; i < ringSizeButtons.length; i++) {
+    ringSizeButtons[i].addEventListener('click', function() {
+    	this.classList.add('clicked');
+    }
+  }
   
   
 </script>
