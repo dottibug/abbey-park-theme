@@ -442,17 +442,23 @@
     ringSizeButtons[i].addEventListener('click', function() {
       	/* remove 'clicked' from all buttons */
       	ringSizeButtonsArray.forEach((button) => {button.classList.remove('clicked')}); 
-      	
       	/* add 'clicked' to the current button */
     	this.classList.add('clicked');
       if(this.classList.contains('ring-method')) {
         document.getElementById('ring-method-info').classList.add('clicked');
+        document.getElementById('paper-method-info').classList.remove('clicked');
+        document.getElementById('sizer-method-info').classList.remove('clicked');
+      }
       } 
       if (this.classList.contains('paper-method')) {
       	document.getElementById('paper-method-info').classList.add('clicked');
+      	document.getElementById('ring-method-info').classList.remove('clicked');
+        document.getElementById('sizer-method-info').classList.remove('clicked');
       }
       if (this.classList.contains('sizer-method')) {
       	document.getElementById('sizer-method-info').classList.add('clicked');
+        document.getElementById('ring-method-info').classList.remove('clicked');
+        document.getElementById('paper-method-info').classList.remove('clicked');
       };
     });
   };
