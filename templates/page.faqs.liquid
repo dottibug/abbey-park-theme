@@ -437,12 +437,11 @@
   for (let i = 0; i < ringSizeButtons.length; i++) {
     ringSizeButtons[i].addEventListener('click', function() {
       	/* remove 'clicked' from all buttons */
-      	
-      
+      	ringSizeButtonsArray.forEach((button) => {button.classList.remove('clicked')}); 
+      	/* add 'clicked' to this button */
     	this.classList.add('clicked');
     });
   };
-  /* if button classlist contains 'clicked' ... */
   
 </script>
 
