@@ -510,16 +510,17 @@ END COPY/PASTE -->
 }
 
 .size--info {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
 	<!--max-height: 0;-->
   	<!--overflow: hidden;-->
-	transition: 0.9s ease-in;
-	
 }
 
 .size--info.clicked {
 	max-height: auto;
-	display: block;
+	visibility: visible;
+	opacity: 1;
 }
 
 {% endstyle %}
