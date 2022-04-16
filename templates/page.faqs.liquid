@@ -438,7 +438,7 @@
     ringSizeButtons[i].addEventListener('click', function() {
       	/* remove 'clicked' from all buttons */
       	ringSizeButtonsArray.forEach((button) => {button.classList.remove('clicked')}); 
-      	/* add 'clicked' to this button */
+      	/* add 'clicked' to the current button */
     	this.classList.add('clicked');
     });
   };
