@@ -260,7 +260,7 @@
           	</div>
           </div>  
           <!-- RING METHOD INFO -->
-          <div class="size--info ring-method-info">
+          <div class="size--info" id="ring-method-info">
               <p>
                 If you have a ring that already fits your finger perfectly, measure the inner 
                 diameter (mm) of the ring on a ruler. Use the chart below to find your ring size.
@@ -441,7 +441,7 @@
       	/* add 'clicked' to the current button */
     	this.classList.add('clicked');
       if(this.classList.contains('ring-method')) {
-      	document.querySelector('ring-method-info').classList.add('clicked');
+        document.getElementById('ring-method-info').classList.add('clicked');
       } 
       if (this.classList.contains('paper-method')) {
       	document.querySelector('paper-method-info').classList.add('clicked');
