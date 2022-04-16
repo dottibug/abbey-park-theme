@@ -75,11 +75,11 @@
 
 <!-- SHOW ACCORDION CONTENT ON CLICK -->
 <script>
-  const accordion = document.getElementsByClassName('container');
+  const accordionLabel = document.getElementsByClassName('label');
   
-  for (let i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener('click', function() {
-    	this.classList.toggle('active');
+  for (let i = 0; i < accordionLabel.length; i++) {
+    accordionLabel[i].addEventListener('click', function() {
+    	this.parentNode.classList.toggle('active');
     });
   };
 </script>
