@@ -510,16 +510,14 @@ END COPY/PASTE -->
 }
 
 .size--info {
-	visibility: hidden;
+	max-height: 0;
+	overflow: hidden;
 	opacity: 0;
-	transition: visibility 0s, opacity 0.5s linear;
-	<!--max-height: 0;-->
-  	<!--overflow: hidden;-->
+	transition: opacity 0.5s linear;
 }
 
 .size--info.clicked {
 	max-height: auto;
-	visibility: visible;
 	opacity: 1;
 }
 
