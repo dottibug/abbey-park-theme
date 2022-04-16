@@ -181,14 +181,10 @@ text-decoration: none;
   	color: #fff;
 }
 
-.button--ring-size p:hover, p:active {
+.button--ring-size p:hover, .button--ring-size p:active {
   	cursor: pointer;
 	background-color: rgba(47, 79, 79, 0.8);
   	border-color: transparent;
   	color: #fff;
 }
 
-/* Remove background-color from label p elements */
-.label p:active {
-	background-color: none;
-}
