@@ -69,27 +69,35 @@
       RETURNS EXCHANGES FORM
       {% form 'contact' %}
       	<!-- First Name -->
-      	<label></label>
-      	<input>
+      	<label for="firstName">First Name</label>
+      	<input type="text"
+               name="firstName"
+               id="firstName"
+               value="First Name">
       
       	<!-- Last Name -->
-      	<label></label>
-      	<input>
+      	<label for="lastName">Last Name</label>
+      	<input type="text"
+               name="lastName"
+               id="lastName"
+               value="Last Name">
       
       	<!-- Email -->
-      	<label></label>
-      	<input>
+      	<label for="customerEmail">Email</label>
+      	<input type="email"
+               name="customerEmail"
+               id="customerEmail">
       
       	<!-- Order Number -->
-      	<label></label>
+      	<label>Order Number</label>
       	<input>
       
       	<!-- Return Or Exchange -->
-      	<label></label>
+      	<label>Return or Exchange</label>
       	<input>
       
       	<!-- Message -->
-      	<label></label>
+      	<label>Message</label>
       	<input>
       
       	Send Button
