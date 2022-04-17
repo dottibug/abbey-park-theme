@@ -649,6 +649,7 @@ END COPY/PASTE -->
 
 .size-tables {
 	display: grid;
+	grid-template-columns: 1fr 1fr;
 	grid-template-areas: 
 		"table1 table2";
 	column-gap: 30px;
@@ -659,7 +660,7 @@ END COPY/PASTE -->
 }
 
 .table2 {
-	.grid-area: table2;
+	grid-area: table2;
 }
 
 table--ring-size {
