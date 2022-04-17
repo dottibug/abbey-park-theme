@@ -266,6 +266,7 @@
                 the inner diameter of the ring in millimeters. Then use the chart below to 
                 find your ring size.
               </p>
+            <div class="size-tables">
             <table class="table--ring-size table1">
             	<tr>
                 	<th>Inner Diameter (mm)</th>
@@ -379,6 +380,7 @@
               		<td>13</td>
             	</tr>
             </table>
+            </div>
             
             <!--
 
@@ -643,6 +645,20 @@ END COPY/PASTE -->
 .size--info.clicked {
 	max-height: 1200px;
 	opacity: 1;
+}
+
+.size-tables {
+	display: grid;
+	grid-template-areas: 
+		"table1 table2";
+}
+
+.table1 {
+	grid-area: table1;
+}
+
+.table2 {
+	.grid-area: table2;
 }
 
 table--ring-size {
