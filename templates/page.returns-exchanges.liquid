@@ -69,32 +69,41 @@
       RETURNS EXCHANGES FORM
       {% form 'contact' %}
       	<!-- First Name -->
+      	<div class="firstName">
       	<label for="firstName">First Name</label>
       	<input type="text"
                name="firstName"
                id="firstName"
                value="First Name">
+      </div>
       
       	<!-- Last Name -->
+      	<div class="lastName">
       	<label for="lastName">Last Name</label>
       	<input type="text"
                name="lastName"
                id="lastName"
                value="Last Name">
+      </div>
       
       	<!-- Email -->
+      	<div class="customerEmail">
       	<label for="customerEmail">Email</label>
       	<input type="email"
                name="customerEmail"
                id="customerEmail">
+      </div>
       
       	<!-- Order Number -->
+      <div class="orderNumber">
       	<label for="orderNumber">Order Number</label>
       	<input type="text"
                name="orderNumber"
                id="orderNumber">
+      </div>
       
       	<!-- Return Or Exchange -->
+      <div class="returnExchange">
       	<input type="radio"
                name="returnExchange"
                id="return"
@@ -105,17 +114,22 @@
                id="exchange"
                value="Exchange">
       	<label for="exchange">Exchange</label>
+      </div>
       
       	<!-- Message -->
+      <div class="message">
       	<label>Message</label>
       	<textarea name="message"
                   id="message">
           Enter more details.
       </textarea>
+      </div>
       
       	<!-- Submit Button -->
+      <div class="submitButton">
       	<input type="submit"
                value="Submit">
+      </div>
       
       {% endform %}
       
