@@ -68,8 +68,7 @@
       {% form 'contact' %}
       <div class="return-request-form">
       	<!-- First Name -->
-        <div class="fullname">
-          <h3 class="fullname-heading">Name</h3>
+        
       	<div class="first-name">
       		<label for="firstName">First Name</label>
       		<input type="text" 
@@ -90,7 +89,6 @@
                autocomplete="on"
                required="required">
       </div>
-        </div>
       
       	<!-- Email -->
       	<div class="customer-email">
@@ -173,25 +171,13 @@ END COPY/PASTE -->
 .return-request-form {
 	display: grid;
 	grid-template-areas:
-		"fullname"
+		"first"
+		"last"
 		"email"
 		"order"
 		"radio"
 		"message"
 		"submit";	
-}
-
-.fullname {
-	display: grid;
-	grid-template-areas:
-		"name-heading name-heading"
-		"first last";
-	grid-area: fullname;
-	column-gap: 20px;
-}
-
-.fullname-heading {
-	grid-area: name-heading;
 }
 
 .first-name {
