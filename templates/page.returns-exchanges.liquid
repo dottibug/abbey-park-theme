@@ -68,7 +68,7 @@
       {% form 'contact' %}
       <div class="return-request-form">
         <!-- Form Title -->
-        <h2>Returns &amp; Exchanges Form</h2>
+        <h2 class="form-title">Returns &amp; Exchanges Form</h2>
         
       	<!-- First Name -->
       	<div class="first-name">
@@ -177,6 +177,7 @@ END COPY/PASTE -->
 .return-request-form {
 	display: grid;
 	grid-template-areas:
+		"title"
 		"first"
 		"last"
 		"email"
@@ -209,6 +210,10 @@ END COPY/PASTE -->
 .radio-label {
 	font-family: 'Assistant', sans-serif;
 	font-size: 1.45rem;
+}
+
+.form-title {
+	grid-area: title;
 }
 
 .first-name {
