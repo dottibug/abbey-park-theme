@@ -163,7 +163,13 @@ END COPY/PASTE -->
 
 .returnRequestForm {
 	display: grid;
-	
+	grid-template-areas: 
+		"firstName lastName"
+		"customerEmail"
+		"orderNumber"
+		"returnExchange"
+		"message"
+		"submitButton";
 }
 
 {% endstyle %}
