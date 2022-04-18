@@ -239,6 +239,18 @@ form input[type=text]:focus, form input[type=email]:focus, form textarea:focus {
 
 .return-exchange {
 	grid-area: radio;
+	display: grid;
+	grid-template-areas:
+		"return"
+		"exchange";
+}
+
+#return {
+	grid-area: return;
+}
+
+#exchange {
+	grid-area: exchange;
 }
 
 .message {
