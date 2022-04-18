@@ -116,12 +116,12 @@
                id="return"
                value="Return"
                checked="checked">
-      	<label for="return">Return</label>
+      	<label for="return" class="radio-label">Return</label>
       	<input type="radio"
                name="returnExchange"
                id="exchange"
                value="Exchange">
-      	<label for="exchange">Exchange</label>
+      	<label for="exchange" class="radio-label">Exchange</label>
       </div>
       
       	<!-- Message -->
@@ -181,7 +181,7 @@ END COPY/PASTE -->
 	row-gap: 20px;
 }
 
-.return-request-form label {
+.return-request-form label:not(.radio-label) {
 	display: block;
 }
 
