@@ -109,7 +109,7 @@
       
       	<!-- Return Or Exchange -->
       <div class="return-exchange"> 
-        <label for="return-exchange" class="required">Type of Return</label>
+        <label for="return-exchange" class="required return-type">Type of Return</label>
        
         <div class="return-radio">
       		<input type="radio" 
@@ -247,9 +247,12 @@ form input[type=text]:focus, form input[type=email]:focus, form textarea:focus {
 	grid-area: radio;
 	display: grid;
 	grid-template-areas: 
+		"label"
 		"return"
 		"exchange";
 }
+
+
 
 .return-radio {
 	grid-area: return;
