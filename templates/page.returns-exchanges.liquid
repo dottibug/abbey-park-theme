@@ -68,6 +68,7 @@
       {% form 'contact' %}
       <div class="return-request-form">
       	<!-- First Name -->
+        <div class="full-name">
       	<div class="first-name">
       		<label for="firstName">First Name</label>
       		<input type="text" 
@@ -88,6 +89,7 @@
                autocomplete="on"
                required="required">
       </div>
+        </div>
       
       	<!-- Email -->
       	<div class="customer-email">
@@ -170,12 +172,19 @@ END COPY/PASTE -->
 .return-request-form {
 	display: grid;
 	grid-template-areas:
-		"first last"
+		"fullname"
 		"email email"
 		"order order"
 		"radio radio"
 		"message message"
 		"submit submit";	
+}
+
+.full-name {
+	display: grid;
+	grid-template-areas:
+		"first last";
+	grid-area: fullname;
 }
 
 .first-name {
