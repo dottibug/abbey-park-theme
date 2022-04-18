@@ -164,32 +164,32 @@ END COPY/PASTE -->
 .returnRequestForm {
 	display: grid;
 	grid-template-areas: 
-		"firstName lastName"
-		"customerEmail"
-		"orderNumber"
-		"returnExchange"
+		"first last"
+		"email"
+		"order"
+		"radio"
 		"message"
-		"submitButton";
+		"submit";
 }
 
 .firstName {
-	grid-area: firstName;
+	grid-area: first;
 }
 
 .lastName {
-	grid-area: lastName;
+	grid-area: last;
 }
 
 .customerEmail {
-	grid-area: customerEmail;
+	grid-area: email;
 }
 
 .orderNumber {
-	grid-area: orderNumber;
+	grid-area: order;
 }
 
 .returnExchange {
-	grid-area: returnExchange;
+	grid-area: radio;
 }
 
 .message {
@@ -197,7 +197,7 @@ END COPY/PASTE -->
 }
 
 .submitButton {
-	grid-area: submitButton;
+	grid-area: submit;
 }
 
 {% endstyle %}
