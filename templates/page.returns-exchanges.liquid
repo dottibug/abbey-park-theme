@@ -204,7 +204,11 @@ form input[type=text], form input[type=email], form textarea {
 	<!-- box-shadow: 1px 3px 6px rgb(51 51 51 / 10%); -->	
 } 
 
-form input[type=text]:focus, form input[type=email]:focus, form textarea:focus {
+form input[type=text]:focus, form input[type=email]:focus {
+	outline: none;
+}
+
+form textarea:focus {
 	background-color: red;
 }
 
