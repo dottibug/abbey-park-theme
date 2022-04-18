@@ -70,7 +70,7 @@
       	<!-- First Name -->
         
       	<div class="first-name">
-      		<label for="firstName">First Name</label>
+      		<label for="firstName" class="required">First Name</label>
       		<input type="text" 
                    name="firstName" 
                    id="firstName" 
@@ -80,7 +80,7 @@
       
       	<!-- Last Name -->
       	<div class="last-name">
-      	<label for="lastName">Last Name</label>
+      	<label for="lastName" class="required">Last Name</label>
       	<input type="text"
                name="lastName"
                id="lastName"
@@ -90,7 +90,7 @@
       
       	<!-- Email -->
       	<div class="customer-email">
-      	<label for="customerEmail">Email</label>
+      	<label for="customerEmail" class="required">Email</label>
       	<input type="email"
                name="customerEmail"
                id="customerEmail"
@@ -100,7 +100,7 @@
       
       	<!-- Order Number -->
       <div class="order-number">
-      	<label for="orderNumber">Order Number</label>
+      	<label for="orderNumber" class="required">Order Number</label>
       	<input type="text"
                name="orderNumber"
                id="orderNumber"
@@ -109,7 +109,7 @@
       
       	<!-- Return Or Exchange -->
       <div class="return-exchange">
-        <label for="return-exchange">Type of Return</label>
+        <label for="return-exchange" class="required">Type of Return</label>
       	<input type="radio"
                name="returnExchange"
                id="return"
@@ -189,6 +189,10 @@ END COPY/PASTE -->
 	color: #666;
 }
 
+.return-request-form label.required {
+	background-color: red;
+}
+
 .radio-label {
 	font-family: 'Assistant', sans-serif;
 	font-size: 1.45rem;
@@ -259,10 +263,6 @@ form input[type=text]:focus, form input[type=email]:focus, form textarea:focus {
   	background-color: rgba(47, 79, 79, 0.8);
   	border-color: transparent;
   	color: #fff;
-}
-
-input[type=text][required] {
-	content: ' *';
 }
 
 {% endstyle %}
