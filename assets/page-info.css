@@ -137,7 +137,7 @@ text-decoration: none;
 
 .accordion--menu .container.active .content {
 	max-height: 1200px;
-  	transition: max-height 0.8s ease-in;
+  	transition: max-height 3s ease-in;
 }
 
 .accordion--menu .container.active .label::before {
