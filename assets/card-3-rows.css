@@ -91,7 +91,7 @@
   	padding-bottom: 4px;
 }
 
-.card .card-footer .footer-text {
+.card .card-footer p {
 	font-size: 1.21rem;
 	font-weight: 400;
 	letter-spacing: 0.05rem;
