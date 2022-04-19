@@ -31,6 +31,7 @@
 	line-height: 2rem;
 }
 
+/* Label asterisk for inputs with "required" class */
 .custom--form label.required:after {
 	content: " *";
 	font-size: 2rem;
