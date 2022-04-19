@@ -56,6 +56,11 @@
 
 .large-body-text {
 	grid-area: large-text;
+  	font-size: 1.95rem;
+	font-weight: 500;
+	color: #666666;
+	margin-top: 0;
+	margin-bottom: 10px;
 }
 
 .card-footer {
