@@ -61,6 +61,10 @@
 	grid-area: title;
 	margin-top: 0;
 	margin-bottom: 0;
+  	color: #666;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
 }
 
 /* Label Styles (excl radio buttons) */
