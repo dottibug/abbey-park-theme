@@ -5,6 +5,7 @@
       "card1 card2";
   	grid-template-columns: 1fr 1fr;
   	margin: 24px 0;
+  	column-gap: 24px;
 }
 
 .card1 {
