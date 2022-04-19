@@ -52,8 +52,8 @@
         		<h3>US &amp; Canada</h3>
             </div>
           	<div class="return-times">
-          		<p class="time-limit-heading">Time Limit</p>
-          		<p class="time-limit">30 days</p>
+              	<p class="return-type">Free returns &amp; exchanges</p>
+          		<p class="time-limit">Within 30 days of delivery</p>
 			</div>
 			<p class="return-heading">Free Returns and Exchanges</p>
           	<p class="refund-details">Refunds are processed upon return delivery.</p>
@@ -269,7 +269,7 @@ END COPY/PASTE -->
 	display: grid;
 	grid-template-areas:
 		"location"
-		"time-limit";
+		"return-days";
 	box-shadow: 1px 3px 6px rgb(51 51 51 / 10%);
 	margin-bottom: 20px;
   	height: fit-content;
@@ -293,7 +293,7 @@ END COPY/PASTE -->
 }
 
 .return-times {
-	grid-area: time-limit;
+	grid-area: return-days;
 	background-color: #ffffff;
 	padding: 12px 10px 8px;
 	grid-area: time-limit
@@ -303,19 +303,19 @@ END COPY/PASTE -->
 		"days";
 }
 
-.return-times .time-limit-heading {
+.return-times .return-type {
+	grid-area: subtitle;
+	font-size: 2rem;
+	font-weight: 400;
+	color: #666666;
+}
+
+.return-times .time-limit {
 	grid-area: days;
 	text-transform: uppercase;
 	font-size: 1rem;
 	letter-spacing: 0.15rem; 
 	font-family: Assistant, sans-serif;
-}
-
-.return-times .time-limit {
-	grid-area: subtitle;
-	font-size: 2rem;
-	font-weight: 400;
-	color: #666666;
 }
 
 
