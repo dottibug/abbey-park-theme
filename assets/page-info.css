@@ -88,10 +88,13 @@ h2 {
   	margin-bottom: 2px;
 }
 
+/* Label Hover: Disabled for now */
+/*
 .accordion--menu .label:hover, .accordion--menu .container.active .label p {
   	color: #3b7d77;
   	color: rgba(59, 125, 119, 0.7);
 }
+*/
 
 .accordion--menu .label::before {
 	content: '+';
