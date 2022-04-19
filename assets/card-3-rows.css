@@ -28,11 +28,17 @@
   	box-shadow: 1px 3px 6px rgb(51 51 51 / 10%); 
 }
 
+.card-header, .card-body, .card-footer {
+	padding-left: 14px;
+  	padding-right: 14px;
+}
+
 /* Header Styling */
 .card-header {
 	grid-area: header;
   	background-color: rgba(47, 79, 79, 0.5);
-	padding: 4px 20px;
+	padding-top: 4px;
+  	padding-bottom: 4px;
 }
 
 .card-header h3 {
@@ -50,7 +56,8 @@
 .card-body {
 	grid-area: body;
   	background-color: #ffffff;
-	padding: 14px 20px;
+  	padding-top: 14px;
+  	padding-bottom: 14px;
 	display: grid;
 	grid-template-areas:
 		"subtitle"
