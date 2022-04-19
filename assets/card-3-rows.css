@@ -46,6 +46,7 @@
 	margin-bottom: 5px;
 }
 
+/* Body Styling */
 .card-body {
 	grid-area: body;
   	background-color: #ffffff;
