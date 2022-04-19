@@ -299,12 +299,12 @@ END COPY/PASTE -->
 	grid-area: time-limit
 	display: grid;
 	grid-template-areas:
-		"days"
-		"subtitle";
+		"subtitle"
+		"days";
 }
 
 .return-times .time-limit-heading {
-	grid-area: subtitle;
+	grid-area: days;
 	text-transform: uppercase;
 	font-size: 1rem;
 	letter-spacing: 0.15rem; 
@@ -312,7 +312,7 @@ END COPY/PASTE -->
 }
 
 .return-times .time-limit {
-	grid-area: days;
+	grid-area: subtitle;
 	font-size: 2rem;
 	font-weight: 400;
 	color: #666666;
