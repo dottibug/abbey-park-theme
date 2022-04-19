@@ -198,9 +198,11 @@ END COPY/PASTE -->
 <div class="return-tables">
         <div class="table-1">
           <h3 class="table-heading">US &amp; Canada</h3>
-          <p class="return-heading">Free Returns and Exchanges</p>
+          <div class="return-times"
           <p class="time-limit-heading">Time Limit</p>
           <p class="time-limit">30 days</p>
+</div>
+			<p class="return-heading">Free Returns and Exchanges</p>
           <p class="refund-details">Refunds are processed upon return delivery.</p>
         </div>           
       </div> 
@@ -232,6 +234,7 @@ END COPY/PASTE -->
 	display: grid;
 	grid-template-areas:
 		"location"
+		"time-limit";
 }
 
 .table-heading {
@@ -243,6 +246,25 @@ END COPY/PASTE -->
 	font-weight: 400;
 	font-size: 1.25rem;
 	letter-spacing: .15rem;
+}
+
+.return-times {
+	grid-area: time-limit;
+	background-color: #ffffff;
+	padding: 12px 10px 8px;
+	grid-area: time-limit
+	display: grid;
+	grid-template-areas:
+		"subtitle"
+		"days";
+}
+
+.time-limit-heading {
+	grid-area: subtitle;
+}
+
+.time-limit {
+	grid-area: days;
 }
 
 
