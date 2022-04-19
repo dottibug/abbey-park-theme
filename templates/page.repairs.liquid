@@ -1,0 +1,202 @@
+{{ 'page-info.css' | asset_url | stylesheet_tag }}
+{{ 'custom-contact-form.css' | asset_url | stylesheet_tag }}
+{{ 'card-3-rows.css' | asset_url | stylesheet_tag }}
+
+{% section 'image-banner' %}
+
+<div class="wrapper--sidebar-info">
+  
+  <!-- SIDEBAR NAVIGATION -->
+  <div class="sidebar--navigation-links">
+    <a href="https://abbey-park-dev-store.myshopify.com/pages/faqs"><span data-content="FAQs" aria-hidden="true"></span>FAQs</a> <br>
+    <a href="https://abbey-park-dev-store.myshopify.com/pages/shipping-delivery"><span data-content="Shipping" aria-hidden="true"></span>Shipping</a> <br>
+    <a href="https://abbey-park-dev-store.myshopify.com/pages/returns-exchanges"><span data-content="Returns & Exchanges" aria-hidden="true"></span>Returns &amp; Exchanges</a> <br>
+    <a href="https://abbey-park-dev-store.myshopify.com/pages/repairs"><span data-content="Repairs" aria-hidden="true"></span>Repairs</a> <br>
+    <a href="https://abbey-park-dev-store.myshopify.com/pages/custom-request"><span data-content="Custom Request" aria-hidden="true"></span>Custom Request</a> <br>
+    <a href="https://abbey-park-dev-store.myshopify.com/pages/size-guide"><span data-content="Size Guide" aria-hidden="true"></span>Size Guide</a> <br>
+    <a href="https://abbey-park-dev-store.myshopify.com/pages/care-guide"><span data-content="Care Guide" aria-hidden="true"></span>Care Guide</a> <br>
+    <a href="https://abbey-park-dev-store.myshopify.com/pages/stockists"><span data-content="Stockists" aria-hidden="true"></span>Stockists</a> <br>
+    <a href="https://abbey-park-dev-store.myshopify.com/pages/wholesale"><span data-content="Wholesale" aria-hidden="true"></span>Wholesale</a> <br>
+    <a href="https://abbey-park-dev-store.myshopify.com/pages/contact"><span data-content="Contact Us" aria-hidden="true"></span>Contact Us</a> <br>
+    
+     <!-- SIDEBAR LINKS AFTER LAUNCH
+    <a href="https://abbeypark.shop/pages/faqs"><span data-content="FAQs" aria-hidden="true"></span>FAQs</a> <br>
+    <a href="https://abbeypark.shop/pages/shipping-delivery"><span data-content="Shipping" aria-hidden="true"></span>Shipping</a> <br>
+    <a href="https://abbeypark.shop/pages/returns-exchanges"><span data-content="Returns & Exchanges" aria-hidden="true"></span>Returns &amp; Exchanges</a> <br>
+    <a href="https://abbeypark.shop/pages/repairs"><span data-content="Repairs" aria-hidden="true"></span>Repairs</a> <br>
+    <a href="https://abbeypark.shop/pages/custom-request"><span data-content="Custom Request" aria-hidden="true"></span>Custom Request</a> <br>
+    <a href="https://abbeypark.shop/pages/size-guide"><span data-content="Size Guide" aria-hidden="true"></span>Size Guide</a> <br>
+    <a href="https://abbeypark.shop/pages/care-guide"><span data-content="Care Guide" aria-hidden="true"></span>Care Guide</a> <br>
+    <a href="https://abbeypark.shop/pages/stockists"><span data-content="Stockists" aria-hidden="true"></span>Stockists</a> <br>
+    <a href="https://abbeypark.shop/pages/wholesale"><span data-content="Wholesale" aria-hidden="true"></span>Wholesale</a> <br>
+    <a href="https://abbeypark.shop/pages/contact"><span data-content="Contact Us" aria-hidden="true"></span>Contact Us</a> <br>
+	-->
+  </div>
+  
+  <!-- ACCORDION -->
+  <div class="main--accordion-info">
+    <div class="heading--info-title">
+    	<h1 class="heading--info">Info Page Heading</h1>
+    </div>
+    <div class="accordion--menu">
+      	<!-- COPY/PASTE FOR EACH ACCORDION ITEM --> 
+    	<div class="container">
+        	<div class="label">
+              <p>Question 1</p>
+          	</div>
+        	<hr>
+        	<div class="content">
+              <p>
+                Information, charts, photos, text
+              </p>
+          	</div>
+      	</div>
+      	<!-- END COPY/PASTE --> 
+   	</div>
+  
+  <!-- CUSTOM CONTACT FORM -->
+  {% form 'contact' %}
+  <div class="custom--form">
+  	<!-- Form Title -->
+    <h2 class="form-title">Form Title</h2>
+    
+    <!-- First Name -->
+    <div class="first-name">
+      	<label for="first-name" class="required">First Name</label>
+      	<input type="text" name="contact[first_name]" id="first-name" autocomplete="on" required="required">
+    </div>
+        
+    <!-- Last Name -->
+    <div class="last-name">
+    	<label for="last-name" class="required">Last Name</label>
+    	<input type="text" 
+               name="contact[last_name]" 
+               id="last-name" 
+               autocomplete="on" 
+               required="required">
+    </div>
+      
+    <!-- Email -->
+    <div class="customer-email">
+      	<label for="customer-email" class="required">Email</label>
+      	<input type="email" 
+               name="contact[email]" 
+               id="customer-email" 
+               autocomplete="on" 
+               required="required">
+    </div>
+    
+    <!-- Order Number -->
+    <div class="order-number">
+      <label for="order-number" class="required">Order Number</label>
+      <input type="text" 
+             name="contact[order_number]" 
+             id="order-number" 
+             required="required">
+    </div>
+    
+    <!-- Radio Selection -->
+    <div class="radio-options">
+      <label for="radio-options" class="radio-options-title required">Radio Options Title</label>
+      
+      <!-- Radio Selection 1 -->
+      <div class="radio-option-1">
+        <!-- NAME -->
+			<!-- 1. Change Name attribute to "contact[relevant_name]" (it should be the same for all radios) -->
+			<!-- 2. Give ID & Value attributes a meaningful name (make them the same as each other) -->
+      	<input type="radio" 
+               name="contact[radio_options]" 
+               id="" 
+               value="" 
+               checked="checked"> 
+      	<label for="radio-option-1" class="radio-label">Option 1</label>
+      </div>
+      
+      <!-- Radio Selection 2 -->
+      <div class="radio-option-2">
+        <!-- NAME -->
+			<!-- 1. Change Name attribute to "contact[relevant_name]" (it should be the same for all radios) -->
+			<!-- 2. Give ID & Value attributes a meaningful name (make them the same as each other) -->
+      	<input type="radio" 
+               name="contact[radio_options]" 
+               id="" 
+               value=""> 
+      	<label for="radio-option-2" class="radio-label">Option 2</label>
+      </div> 
+    </div>
+    
+    <!-- Text Area -->
+    <div class="message">
+    	<label for="message" class="required">Message</label>
+        	<p>Instructions for the message.</p>
+      		<textarea name="contact[body]" id="message" required="required"></textarea>
+    </div>
+    
+    <!-- Submit Button -->
+    <div class="submit">
+      <input type="submit" 
+             value="Submit" 
+             class="submit-button">
+    </div>
+    	
+  </div>
+  {% endform %}
+        
+  <!-- 3-ROW CARD -->
+  <div class="card--3rows">  
+    <!-- Card 1 -->
+    <div class="card card1">
+      <!-- Card Header-->
+      <div class="card-header">
+      	<h3>Card Header</h3>
+      </div>
+      <!-- Card Body -->
+      <div class="card-body">
+        <p class="card-body-subtitle">Subtitle</p>
+        <p class="large-body-text">Large font body text.</p>
+      </div>
+      <!-- Card Footer -->
+      <div class="card-footer">
+        <p class="footer-text">Small font footer text.</p>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="card card2">
+      <!-- Card Header-->
+      <div class="card-header">
+      	<h3>Card Header</h3>
+      </div>
+      <!-- Card Body -->
+      <div class="card-body">
+        <p class="card-body-subtitle">Subtitle</p>
+        <p class="large-body-text">Large font body text.</p>
+      </div>
+      <!-- Card Footer -->
+      <div class="card-footer">
+        <p class="footer-text">Small font footer text.</p>
+      </div>
+    </div>   
+  </div>
+    
+ </div>    
+</div>
+
+<!-- SHOW ACCORDION CONTENT ON CLICK -->
+<script>
+  const accordionLabel = document.getElementsByClassName('label');
+  
+  for (let i = 0; i < accordionLabel.length; i++) {
+    accordionLabel[i].addEventListener('click', function() {
+    	this.parentNode.classList.toggle('active');
+    });
+  };
+</script>
+
+<!-- 
+COPY/PASTE FOR EACH ACCORDION ITEM:
+	<div class="container">
+    	<div class="label">Question or topic text</div>
+        <hr>
+        <div class="content">Information, charts, photos, text</div>
+    </div>
+-->
