@@ -61,19 +61,30 @@
     <!-- Last Name -->
     <div class="last-name">
     	<label for="last-name" class="required">Last Name</label>
-    	<input type="text" name="contact[last_name]" id="last-name" autocomplete="on" required="required">
+    	<input type="text" 
+               name="contact[last_name]" 
+               id="last-name" 
+               autocomplete="on" 
+               required="required">
     </div>
       
     <!-- Email -->
     <div class="customer-email">
       	<label for="customer-email" class="required">Email</label>
-      	<input type="email" name="contact[email]" id="customer-email" autocomplete="on" required="required">
+      	<input type="email" 
+               name="contact[email]" 
+               id="customer-email" 
+               autocomplete="on" 
+               required="required">
     </div>
     
     <!-- Order Number -->
     <div class="order-number">
       <label for="order-number" class="required">Order Number</label>
-      <input type="text" name="contact[order_number]" id="order-number" required="required">
+      <input type="text" 
+             name="contact[order_number]" 
+             id="order-number" 
+             required="required">
     </div>
     
     <!-- Radio Selection -->
@@ -85,7 +96,11 @@
         <!-- NAME -->
 			<!-- 1. Change Name attribute to "contact[relevant_name]" (it should be the same for all radios)
 			Give ID & Value attributes a meaningful name (make them the same as each other) -->
-      	<input type="radio" name="contact[radio_options]" id="" value="" checked="checked"> 
+      	<input type="radio" 
+               name="contact[radio_options]" 
+               id="" 
+               value="" 
+               checked="checked"> 
       	<label for="radio-option-1" class="radio-label">Option 1</label>
       </div>
       
@@ -94,7 +109,10 @@
         <!-- NAME -->
 			<!-- 1. Change Name attribute to "contact[relevant_name]" (it should be the same for all radios)
 			Give ID & Value attributes a meaningful name (make them the same as each other) -->
-      	<input type="radio" name="contact[radio_options]" id="" value=""> 
+      	<input type="radio" 
+               name="contact[radio_options]" 
+               id="" 
+               value=""> 
       	<label for="radio-option-2" class="radio-label">Option 2</label>
       </div> 
     </div>
@@ -103,12 +121,16 @@
     <div class="message">
       <label for="message" class="required">Message</label>
         <p>Instructions for the message.</p>
-      	<textarea name="contact[body]" id="message" required="required"></textarea>
+      	<textarea name="contact[body]" 
+                  id="message" 
+                  required="required"></textarea>
       </div>
     
     <!-- Submit Button -->
     <div class="submit">
-      <input type="submit" value="Submit" class="submit-button">
+      <input type="submit" 
+             value="Submit" 
+             class="submit-button">
     </div>
     
     </div>
