@@ -30,10 +30,26 @@
 
 .card-header {
 	grid-area: header;
+  	background-color: rgba(47, 79, 79, 0.5);
+	padding: 4px 20px;
 }
 
 .card-body {
 	grid-area: body;
+  	background-color: #ffffff;
+	padding: 12px 20px 8px;
+	display: grid;
+	grid-template-areas:
+		"subtitle"
+		"large-text";
+}
+
+.subtitle {
+	grid-area: subtitle;
+}
+
+.large-body-text {
+	grid-area: large-text;
 }
 
 .card-footer {
