@@ -30,3 +30,10 @@
 	color: #666;
 	line-height: 2rem;
 }
+
+.custom--form label.required:after {
+	content: " *";
+	font-size: 2rem;
+	vertical-align: middle;
+	color: #cc9a9b;
+}
