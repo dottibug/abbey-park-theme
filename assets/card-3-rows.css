@@ -58,7 +58,7 @@
 	grid-area: body;
   	background-color: #ffffff;
   	padding-top: 14px;
-  	padding-bottom: 14px;
+  	padding-bottom: 12px;
 	display: grid;
 	grid-template-areas:
 		"subtitle"
