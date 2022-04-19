@@ -1,9 +1,9 @@
 body {
-	font-family: assistant, sans-serif;
+	font-family: Assistant, sans-serif;
 }
 
 h2 {
-	font-family: assistant, sans-serif;
+	font-family: Assistant, sans-serif;
   	font-size: 1.4rem;
   	text-transform: uppercase;
   	font-weight: 600;
@@ -15,8 +15,8 @@ h2 {
 	display: grid;
   	grid-template-areas: 
       "sidebar info";
-  grid-template-columns: 1fr 3fr;
-  margin-top: 40px;
+  	grid-template-columns: 1fr 3fr;
+  	margin-top: 40px;
 }
 
 .sidebar--navigation-links {
@@ -46,31 +46,9 @@ text-decoration: none;
   transition: transform 275ms ease;
 }
 
-/* FOR SLIDING COLOR CHANGE ON HOVER
-.sidebar--navigation-links a:hover span {
-  transform: translateX(0);
-}
-
-.sidebar::before { 
-  display: inline-block;
-  content: attr(data-content);
-  color: #314544;
-  transform: translateX(100%);
-  transition: transform 275ms ease;
-  text-decoration: none;
-}
-
-.sidebar--navigation-links a:hover span::before {
-  transform: translateX(0);
-}
-*/
-
 .sidebar--navigation-links a:hover {
   	color: #333;
   	transform: scale(1.08);
-  	/*background-color: #cc9a9b;
-  	border-radius: 2px;
-  	padding: 0 5px;*/
 }
 
 .main--accordion-info {
@@ -142,6 +120,7 @@ text-decoration: none;
   	transition: max-height 0.9s ease-in;
 }
 
+/* Accordion menu toggle */
 .accordion--menu .container.active .label::before {
 	content: '-';
   	font-size: 2.5rem;
