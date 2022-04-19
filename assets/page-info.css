@@ -61,6 +61,7 @@ h2 {
   grid-area: info;
 }
 
+/* Page Heading */
 .heading--info {
 	margin-top: 0;
 }
