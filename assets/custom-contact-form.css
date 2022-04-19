@@ -52,3 +52,11 @@
 	font-size: 1.45rem;
 	font-family: 'Assistant', sans-serif;
 }
+
+
+.custom--form input[type=text]:focus, .custom--form input[type=email]:focus, .custom--form textarea:focus {
+	outline: none;
+	box-shadow: 1px 3px 6px rgb(51 51 51 / 10%);
+	border-bottom: 2px solid rgba(47, 79, 79, 0.5);
+	transition: 0.2s ease-in;	
+}
