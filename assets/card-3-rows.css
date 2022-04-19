@@ -3,7 +3,7 @@
 	display: grid;
   	grid-template-areas:
       "card1 card2";
-  	grid-template-columns: 1fr 1fr;
+  	grid-template-columns: min-content min-content;
   	margin: 24px 0;
   	column-gap: 24px;
 }
