@@ -179,9 +179,20 @@ END COPY/PASTE -->
 
 {% style %}
 
-
-
-
+.custom--form {
+	display: grid;
+	grid-template-areas:
+		"title"
+		"first"
+		"last"
+		"email"
+		"order"
+		"radio"
+		"textarea-block"
+		"submit";	
+	row-gap: 20px;
+	margin-top: 30px;	
+}
 
 .order-number {
 	grid-area: order;
