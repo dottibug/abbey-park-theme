@@ -19,6 +19,7 @@
 	margin-bottom: 0;
 }
 
+/* Label Styles (excl radio buttons) */
 .custom--form label:not(.radio-label) {
 	display: block;
 	font-family: 'Assistant', sans-serif;
