@@ -88,7 +88,7 @@ h2 {
   	margin-bottom: 2px;
 }
 
-.accordion--menu .label:hover, .accordion--menu .label:active {
+.accordion--menu .label:hover, .accordion--menu .label:focus {
   	color: #3b7d77;
   	color: rgba(59, 125, 119, 0.7);
 }
