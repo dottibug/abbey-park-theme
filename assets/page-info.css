@@ -90,6 +90,7 @@ h2 {
 
 .accordion--menu .label:hover {
 	color: #333;
+  	color: #cc9a9b;
 }
 
 .accordion--menu .label::before {
@@ -109,7 +110,6 @@ h2 {
   	font-weight: 300;
   	right: 0px;
 }
-
 
 /* Accordion Content */
 .accordion--menu .content {
@@ -133,9 +133,6 @@ h2 {
     margin-bottom: 10px;
     font-weight: 300;
 }
-
-
-
 
 /* Accordion HR */
 .accordion--menu hr {
