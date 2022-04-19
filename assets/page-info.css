@@ -82,7 +82,7 @@ h2 {
   	cursor: pointer;
 }
 
-p.label {
+.container label p {
 	font-size: 1.45rem;
   	font-weight: 500;
   	margin-bottom: 4px;
