@@ -246,9 +246,12 @@ END COPY/PASTE -->
 
 .return-tables {
 	display: grid;
+	grid-template areas:
+		"table-1 table-2";
 }
 
 .table-1 {
+	grid-area: table-1;
 	display: grid;
 	grid-template-areas:
 		"location"
@@ -260,6 +263,7 @@ END COPY/PASTE -->
 }
 
 .table-2 {
+	grid-area: table-2;
 	display: grid;
 	grid-template-areas:
 		"location"
