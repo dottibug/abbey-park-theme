@@ -66,9 +66,9 @@ h2 {
 	margin-top: 0;
 }
 
-.accordion--menu hr {
-	margin-top: 0px;
-  	margin-bottom: 8px;
+/* Accordion Container & Position */
+.accordion--menu .container {
+	position: relative;
 }
 
 .accordion--menu {
@@ -76,14 +76,24 @@ h2 {
   	padding-right: 100px;
 }
 
+/* Accordion Labels */
+
+
+/* Accordion Content */
+
+
+/* Accordion HR */
+.accordion--menu hr {
+	margin-top: 0px;
+  	margin-bottom: 8px;
+}
+
+
 .accordion--menu p {
 	font-size: 1.45rem;
   	font-weight: 400;
 }
 
-.accordion--menu .container {
-	position: relative;
-}
 
 .accordion--menu .label {
 	position: relative;
