@@ -5,12 +5,13 @@ body {
 h2 {
 	font-family: Assistant, sans-serif;
   	font-size: 1.4rem;
-  	text-transform: uppercase;
   	font-weight: 600;
+  	text-transform: uppercase;
   	margin-top: 40px;
   	margin-bottom: 15px;
 }
 
+/* Page Grid Layout */
 .wrapper--sidebar-info {
 	display: grid;
   	grid-template-areas: 
@@ -19,12 +20,13 @@ h2 {
   	margin-top: 40px;
 }
 
+/* Sidebar Navigation */
 .sidebar--navigation-links {
-  grid-area: sidebar;
-  overflow-x: hidden;
+  	grid-area: sidebar;
     margin-left: 47px;
     margin-top: 0;
-  width: auto;
+  	overflow-x: hidden;
+  	width: auto;
 }
 
 .sidebar--navigation-links a {
