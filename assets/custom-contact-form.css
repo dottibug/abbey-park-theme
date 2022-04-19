@@ -13,6 +13,16 @@
 	margin-top: 30px;	
 }
 
+/* Grid Areas */
+.textarea-wrapper {
+	grid-area: textarea-block;
+}
+
+.submit-button-wrapper {
+	grid-area: submit;
+}
+
+
 /* Title of form */
 .form-title {
 	grid-area: title;
