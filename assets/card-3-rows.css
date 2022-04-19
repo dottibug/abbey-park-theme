@@ -50,7 +50,7 @@
 .card-body {
 	grid-area: body;
   	background-color: #ffffff;
-	padding: 8px 20px;
+	padding: 10px 20px;
 	display: grid;
 	grid-template-areas:
 		"subtitle"
@@ -64,7 +64,7 @@ p.card-body-subtitle {
 	letter-spacing: 0.1rem; 
 	font-weight: 300;
     margin-bottom: -4px;
-    margin-top: 8px;
+    margin-top: 0;
 }
 
 p.large-body-text {
