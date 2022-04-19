@@ -77,32 +77,14 @@ h2 {
 }
 
 /* Accordion Labels */
-
-
-/* Accordion Content */
-
-
-/* Accordion HR */
-.accordion--menu hr {
-	margin-top: 0px;
-  	margin-bottom: 8px;
-}
-
-
-.accordion--menu p {
-	font-size: 1.45rem;
-  	font-weight: 400;
-}
-
-
 .accordion--menu .label {
 	position: relative;
   	cursor: pointer;
-  	font-size: 1.45rem;
-  	font-weight: 400;
 }
 
-.accordion--menu .label p {
+p.label {
+	font-size: 1.45rem;
+  	font-weight: 500;
   	margin-bottom: 4px;
 }
 
@@ -120,7 +102,16 @@ h2 {
   bottom: -8px;
 }
 
-/* Accordion content style & animation*/
+.accordion--menu .container.active .label::before {
+	content: '-';
+  	font-size: 2.5rem;
+  	color: #666666;
+  	font-weight: 300;
+  	right: 0px;
+}
+
+
+/* Accordion Content */
 .accordion--menu .content {
   	font-size: 1.35rem;
   	font-weight: 300;
@@ -131,20 +122,38 @@ h2 {
   	transition: max-height 0.5s ease;
 }
 
-/* Accordion open animation */
 .accordion--menu .container.active .content {
 	max-height: 1200px;
   	transition: max-height 0.9s ease-in;
 }
 
-/* Accordion menu toggle */
-.accordion--menu .container.active .label::before {
-	content: '-';
-  	font-size: 2.5rem;
-  	color: #666666;
-  	font-weight: 300;
-  	right: 0px;
+p.content {
+	font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 300;
 }
+
+
+
+
+/* Accordion HR */
+.accordion--menu hr {
+	margin-top: 0px;
+  	margin-bottom: 8px;
+}
+
+
+.accordion--menu p {
+	font-size: 1.45rem;
+  	font-weight: 400;
+}
+
+
+
+
+
+
 
 .bold-text {
 	font-weight: 600;
