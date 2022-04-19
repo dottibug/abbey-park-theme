@@ -50,7 +50,7 @@
 .card-body {
 	grid-area: body;
   	background-color: #ffffff;
-	padding: 12px 20px 8px;
+	padding: 8px 20px;
 	display: grid;
 	grid-template-areas:
 		"subtitle"
