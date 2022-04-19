@@ -6,6 +6,7 @@
 		"first"
 		"last"
 		"email"
+      	"order"
 		"radio"
 		"textarea-block"
 		"submit";	
@@ -24,6 +25,10 @@
 
 .customer-email {
 	grid-area: email;
+}
+
+.order-number {
+	grid-area: order;
 }
 
 .radio-options {
