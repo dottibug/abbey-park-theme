@@ -82,7 +82,7 @@ h2 {
   	cursor: pointer;
 }
 
-.accordion--menu .container label p {
+.accordion--menu label p {
 	font-size: 1.45rem;
   	font-weight: 500;
   	margin-bottom: 4px;
