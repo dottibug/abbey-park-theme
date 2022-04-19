@@ -57,7 +57,7 @@
 		"large-text";
 }
 
-.card-body-subtitle p {
+p.card-body-subtitle {
 	grid-area: subtitle;
   	text-transform: uppercase;
 	font-size: 1.2rem;
