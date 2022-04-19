@@ -61,6 +61,7 @@
 	transition: 0.2s ease-in;	
 }
 
+/* Textarea instructions */
 .textarea-wrapper p {
 	margin-top: 0px;
     margin-bottom: 4px;
