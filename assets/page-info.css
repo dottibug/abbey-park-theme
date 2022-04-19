@@ -91,6 +91,7 @@ h2 {
 .accordion--menu .label:hover {
 	color: #333;
   	color: #cc9a9b;
+  	color: #c26b76;
 }
 
 .accordion--menu .label::before {
