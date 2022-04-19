@@ -55,8 +55,9 @@
               	<p class="time-limit">Time Limit</p>
               	<p class="return-type">Free returns &amp; exchanges within 30 days</p>
 			</div>
-			<p class="return-heading">Free Returns and Exchanges</p>
-          	<p class="refund-details">Refunds are processed upon return delivery.</p>
+          	<div class="details">
+              <p>Refunds are processed upon return delivery.</p>
+            </div>
         </div>           
       
         <div class="table-2">
@@ -67,8 +68,9 @@
               	<p class="time-limit">Time Limit</p>
               	<p class="return-type">Returns &amp; exchanges within 14 days</p>
 			</div>
-			<p class="return-heading">Free Returns and Exchanges</p>
-          	<p class="refund-details">Refunds are processed upon return delivery.</p>
+			<div class="details">
+              <p>Refunds are processed upon return delivery.</p>
+            </div>
         </div>     
         
       </div> 
@@ -282,7 +284,8 @@ END COPY/PASTE -->
 	display: grid;
 	grid-template-areas:
 		"heading"
-		"returns";
+		"returns"
+		"details";
 	box-shadow: 1px 3px 6px rgb(51 51 51 / 10%);
 	margin-bottom: 20px;
   	height: fit-content;
@@ -323,7 +326,15 @@ END COPY/PASTE -->
 	margin-bottom: 0;
 }
 
-
+.details {
+	font-size: 1.2rem;
+	font-weight: 400;
+	letter-spacing: 0.1rem;
+  	color: #666;
+	text-transform: capitalize;
+	background-color: rgba(47, 79, 79, 0.15);
+	padding: 8px 10px;
+}
 
 
 
