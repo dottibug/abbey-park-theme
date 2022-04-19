@@ -127,7 +127,7 @@ h2 {
   	transition: max-height 0.9s ease-in;
 }
 
-p.content {
+.accordion--menu .container .content .p {
 	font-size: 1.35rem;
     margin-top: 0;
     margin-bottom: 10px;
