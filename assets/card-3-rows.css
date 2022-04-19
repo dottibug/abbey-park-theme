@@ -42,7 +42,7 @@
   	padding-bottom: 4px;
 }
 
-.card-header h3 {
+.card .card-header h3 {
 	font-family: Assistant, sans-serif; 
 	color: white;
 	text-transform: uppercase;
