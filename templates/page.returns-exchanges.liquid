@@ -194,6 +194,18 @@
       </div>
 END COPY/PASTE -->
 
+<!--  
+<div class="return-tables">
+        <div class="table-1">
+          <h3 class="table-heading">US &amp; Canada</h3>
+          <p class="return-heading">Free Returns and Exchanges</p>
+          <p class="time-limit-heading">Time Limit</p>
+          <p class="time-limit">30 days</p>
+          <p class="refund-details">Refunds are processed upon return delivery.</p>
+        </div>           
+      </div> 
+-->
+
 {% style %}
 
 .custom--form {
@@ -213,6 +225,24 @@ END COPY/PASTE -->
 
 .order-number {
 	grid-area: order;
+}
+
+
+.return-tables {
+	display: grid;
+	grid-template-areas:
+		"location"
+}
+
+.table-heading {
+	grid-area: location;
+	background-color: rgba(47, 79, 79, 0.5);
+	color: white;
+	padding: 4px 10px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.25rem;
+	letter-spacing: .15rem;
 }
 
 
