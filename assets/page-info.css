@@ -29,14 +29,15 @@ h2 {
   	width: auto;
 }
 
+/* Sidebar links styling */
 .sidebar--navigation-links a {
-text-decoration: none;
-  font-size: 1.5rem;
-  line-height: 3.25rem;
-  color: #999;
-  display: inline-block;
-  position: relative;
-  padding-left: 5px;
+  	color: #999;
+  	display: inline-block;
+  	font-size: 1.5rem;
+  	line-height: 3.25rem;
+  	padding-left: 5px;
+  	position: relative;
+  	text-decoration: none;
 }
 
 .sidebar {
