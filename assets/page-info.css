@@ -56,6 +56,7 @@ h2 {
   	transform: scale(1.08);
 }
 
+/* Main-Accordion Grid Area & Styling */
 .main--accordion-info {
   grid-area: info;
 }
