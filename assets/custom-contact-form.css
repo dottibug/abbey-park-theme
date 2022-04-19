@@ -44,11 +44,11 @@
 	grid-area: title;
 }
 
-.option1-radio {
+.radio-option-1 {
 	grid-area: radio1;
 }
 
-.option2-radio {
+.radio-option-2 {
 	grid-area: radio2;
 }
 
