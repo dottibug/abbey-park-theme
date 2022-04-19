@@ -14,6 +14,17 @@
 }
 
 /* Grid Areas */
+.first-name {
+	grid-area: first;
+}
+
+.last-name {
+	grid-area: last;
+}
+
+.customer-email {
+	grid-area: email;
+}
 
 .radio-options {
 	grid-area: radio;
