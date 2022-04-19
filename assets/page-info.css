@@ -4,11 +4,10 @@ body {
 
 h2 {
 	font-family: Assistant, sans-serif;
-  	font-size: 1.4rem;
-  	font-weight: 600;
-  	text-transform: uppercase;
-  	margin-top: 40px;
-  	margin-bottom: 15px;
+  	font-size: 2rem;
+  	font-weight: 500;
+  	margin-top: 33px;
+  	margin-bottom: 0;
 }
 
 /* Page Grid Layout */
