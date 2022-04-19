@@ -303,3 +303,20 @@
     });
   };
 </script>
+  
+{% style %}
+  .card-footer {
+  	display: grid;
+  	grid-area-templates:
+  		"text price";
+  }
+  
+  p.footer-text {
+  	grid-area: text;
+  }
+  
+  p.footer-text-price {
+  	grid-area: price;
+  	text-transform: uppercase;
+  }
+{% endstyle%}
