@@ -75,7 +75,7 @@
     margin-top: 0;
 }
 
-p.large-body-text {
+.card .card-body .large-body-text {
 	grid-area: large-text;
   	font-size: 1.75rem;
 	font-weight: 500;
