@@ -213,17 +213,17 @@
 END COPY/PASTE -->
 
 <!--  
-<div class="return-tables">
-        <div class="table-1">
-          <h3 class="table-heading">US &amp; Canada</h3>
-          <div class="return-times"
-          <p class="time-limit-heading">Time Limit</p>
-          <p class="time-limit">30 days</p>
-</div>
+ <div class="table-2">
+        	<div class="table-heading">	
+          		<h3>International</h3>
+            </div>
+          	<div class="return-times">
+              	<p class="time-limit">Time Limit</p>
+              	<p class="return-type">Returns &amp; exchanges within 14 days</p>
+			</div>
 			<p class="return-heading">Free Returns and Exchanges</p>
-          <p class="refund-details">Refunds are processed upon return delivery.</p>
-        </div>           
-      </div> 
+          	<p class="refund-details">Refunds are processed upon return delivery.</p>
+        </div> 
 -->
 
 {% style %}
@@ -259,8 +259,8 @@ END COPY/PASTE -->
 	grid-area: table2;
 	display: grid;
 	grid-template-areas:
-		"location"
-		"return-days";
+		"heading"
+		"returns";
 	box-shadow: 1px 3px 6px rgb(51 51 51 / 10%);
 	margin-bottom: 20px;
   	height: fit-content;
@@ -270,15 +270,15 @@ END COPY/PASTE -->
 	grid-area: table2;
 	display: grid;
 	grid-template-areas:
-		"location"
-		"return-days";
+		"heading"
+		"returns";
 	box-shadow: 1px 3px 6px rgb(51 51 51 / 10%);
 	margin-bottom: 20px;
   	height: fit-content;
 }
 
 .table-heading {
-	grid-area: location;
+	grid-area: heading;
 	background-color: rgba(47, 79, 79, 0.5);
 }
 
@@ -295,7 +295,7 @@ END COPY/PASTE -->
 }
 
 .return-times {
-	grid-area: return-days;
+	grid-area: returns;
 	background-color: #ffffff;
 	padding: 12px 10px 8px;
 	grid-area: time-limit
@@ -305,14 +305,14 @@ END COPY/PASTE -->
 		"days";
 }
 
-.return-times .return-type {
+.return-times.return-type {
 	grid-area: subtitle;
 	font-size: 2rem;
 	font-weight: 400;
 	color: #666666;
 }
 
-.return-times .time-limit {
+.return-times.time-limit {
 	grid-area: days;
 	text-transform: uppercase;
 	font-size: 1rem;
