@@ -56,7 +56,7 @@
 	grid-area: message;
 }
 
-.submit-button-wrapper {
+.submit {
 	grid-area: submit;
 }
 
