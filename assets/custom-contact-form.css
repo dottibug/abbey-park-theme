@@ -130,6 +130,11 @@
 	accent-color: #c26b76;
 }
 
+/* Radio input & label hover cursor */
+.custom--form input[type=radio]:hover {
+	cursor: pointer;
+}
+
 /* Message instructions */
 .message p {
 	margin-top: 0px;
