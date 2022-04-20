@@ -123,6 +123,13 @@
 	transition: 0.2s ease-in;	
 }
 
+/* Input hover styling: text, email, textarea */
+.custom--form input[type=text]:hover, .custom--form input[type=email]:hover, .custom--form textarea:hover {
+	outline: none;
+	box-shadow: 1px 3px 6px rgb(51 51 51 / 10%);
+	transition: 0.2s ease-in;	
+}
+
 /* Message instructions */
 .message p {
 	margin-top: 0px;
