@@ -168,5 +168,5 @@ textarea {
   	/*background-color: rgba(47, 79, 79, 0.8);
   	border-color: transparent;
   	color: #fff;*/
-  	scale: 1;
+  	transform: scale(2);
 }
