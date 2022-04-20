@@ -38,6 +38,7 @@
 .card-header {
 	grid-area: header;
   	background-color: rgba(47, 79, 79, 0.5);
+  	background-color: #708685;
 	padding-top: 4px;
   	padding-bottom: 4px;
 }
