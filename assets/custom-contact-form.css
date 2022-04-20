@@ -8,7 +8,6 @@
 		"email"
       	"order"
 		"radio"
-      	"dropdown"
 		"message"
 		"submit";	
 	row-gap: 20px;
@@ -39,10 +38,6 @@
 		"title"
 		"radio1"
 		"radio2";
-}
-
-.dropdown {
-	grid-area: dropdown;
 }
 
 .radio-options-title {
