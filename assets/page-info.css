@@ -196,3 +196,9 @@ h2 {
 	margin-top: 0px;
   	margin-bottom: 8px;
 }
+
+/* General Info Page HR */
+.info-page hr {
+	margin-top: 8px;
+  	margin-bottom: 8px;
+}
