@@ -125,39 +125,20 @@
       </div> 
     </div>
     
-    <!--
-    <!-- Dropdown Selection 
-    <div class="dropdown-menu">
-      <label for="dropdown-menu" class="required">Dropdown Menu Title</label>
-      <!-- NAME 
-	  <!-- 1. Change select Name attribute to "contact[relevant_name]"
-      <select name="contact[dropdown_item]" id="dropdown-menu">
-        <!-- VALUE 
-        <!-- Each option Value attribute should be set to the inner HTML value  
+    <!-- Dropdown Selection -->
+    <div class="dropdown">
+      <label for="dropdown" class="required">Dropdown Title</label>
+      <!-- NAME -->
+	  <!-- Change select Name attribute to "contact[relevant_name]" -->
+      <select name="contact[dropdown_item]" id="dropdown">
+        <!-- VALUE -->
+        <!-- Each option Value attribute should be set to the inner HTML value -->
         <option value="item1">Item 1</option>
         <option value="item2">Item 2</option>
         <option value="item3">Item 3</option>
         <option value="item4">Item 4</option>
         <option value="item5">Item 5</option>
-      </select>
-    </div>
-    -->
-    
-    <div class="dropdown">
-      <button class="dropdown-button">Dropdown2</button>
-    	<div class="dropdown-content">
-    		<div name="contact[dropdown_item]" id="dropdown-menu">
-                <!-- VALUE -->
-                <!-- Each option Value attribute should be set to the inner HTML value --> 
-                <select>
-              	<option value="item1">Item 1</option>
-                <option value="item2">Item 2</option>
-                <option value="item3">Item 3</option>
-                <option value="item4">Item 4</option>
-                <option value="item5">Item 5</option>
-              </select>
-      		</div>  
-    	</div>
+      </select> 
     </div>
     
     <!-- Text Area -->
@@ -238,30 +219,6 @@ COPY/PASTE FOR EACH ACCORDION ITEM:
 
 {% style %}
 
-.dropdown {
-	display: inline-block;
- 	position: relative;
-}
 
-.dropdown-content {
-	display: none;
-	position: absolute;
-	width: 100%;
-	overflow: auto;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
-.dropdown-content option {
-	background-color: #fff;
-}
-
-.dropdown-content option:hover {
-	background-color: pink;
-	cursor: pointer;
-}
 
 {% endstyle %}
