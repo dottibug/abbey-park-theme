@@ -43,6 +43,8 @@
 
 .dropdown-menu {
 	grid-area: dropdown;
+  	display: inline-block;
+  	position: relative;
 }
 
 .radio-options-title {
