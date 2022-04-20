@@ -131,7 +131,7 @@
 }
 
 /* Radio input & label hover cursor */
-.custom--form input[type=radio]:hover {
+.custom--form input[type=radio]:hover, .radio-label:hover {
 	cursor: pointer;
 }
 
