@@ -145,15 +145,17 @@ textarea {
 
 /* Submit button styling */
 .submit-button {
-  	color: rgba(47, 79, 79, 0.8);
+  	/*color: rgba(47, 79, 79, 0.8);*/
+  	color: #fff;
   	font-weight: 600;
   	font-size: 1.3rem;
   	text-decoration: none;
   	text-transform: uppercase;
   	box-sizing: border-box;
-	background-color: transparent;
-  	border: 1px solid;
-  	border-color: rgba(47, 79, 79, 0.8);
+	/*background-color: transparent;*/
+  	background-color: rgba(47, 79, 79, 0.8);
+  	/*border: 1px solid;
+  	border-color: rgba(47, 79, 79, 0.8);*/
   	padding: 12px 20px;
     letter-spacing: inherit;
 	margin-top: 0px;
@@ -162,7 +164,7 @@ textarea {
 
 /* Hover submit button styling */
 .submit-button:hover {
-  	background-color: rgba(47, 79, 79, 0.8);
+  	/*background-color: rgba(47, 79, 79, 0.8);
   	border-color: transparent;
-  	color: #fff;
+  	color: #fff;*/
 }
