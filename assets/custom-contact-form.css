@@ -125,6 +125,11 @@
 	transition: 0.2s ease-in;	
 }
 
+/* Input accent color: radios */
+.custom--form input[type=radio] {
+	accent-color: #c26b76;
+}
+
 /* Message instructions */
 .message p {
 	margin-top: 0px;
